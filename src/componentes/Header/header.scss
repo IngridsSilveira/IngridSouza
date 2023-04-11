@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  z-index: 3;
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .btn-brightness {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #2cadad;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .menu-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    li {
+      padding: 6px;
+      text-decoration: uppercase;
+    }
+    .active {
+      background: #2cadad;
+      border-radius: 5px;
+    }
+  }
+  .btn-translate {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Sono", sans-serif;
+    font-weight: bold;
+    border: none;
+  }
+  .btn-translate:hover {
+    color: #09d5d5;
+  }
+}
