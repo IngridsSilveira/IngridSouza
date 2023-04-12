@@ -1,0 +1,182 @@
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 589px;
+  width: 100%;
+  padding: 50px;
+
+  .name {
+    font-family: "Sono", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 3.5rem;
+  }
+  .profission {
+    font-family: "Sono", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+.bg-image-black {
+  background: url("../../../public/images/coding-wallpaper.png") center / cover;
+}
+.bg-image-white {
+  background: url("../../../public/images/wallp-white.png") center / cover;
+  filter: brightness(90%);
+  color: #000 !important;
+}
+.titulos-black {
+  color: #000 !important;
+}
+.bg-branco {
+  background-color: #e6e6e6;
+  color: #f4f4f4;
+}
+
+/* WIDGET */
+.widget_title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.widget_title_bar {
+  width: 50px;
+  height: 2px;
+  background-color: #2cadad;
+  margin-top: 10px;
+}
+
+/*SECTION DO SOBRE MIM E DESCRIÇÃO */
+.about {
+  padding: 20px;
+  .description {
+    font-family: "Sono", sans-serif;
+    width: 550px;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .info {
+    font-size: 0.9rem;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #2cadad;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+.div_icons_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  .icons_first {
+    font-size: 1.9rem;
+    margin-left: 10px;
+  }
+  .bi-instagram {
+    color: #ca0080;
+  }
+  .bi-linkedin {
+    color: #3385ff;
+  }
+  .bi-github {
+    color: #fff;
+  }
+  .bi-whatsapp {
+    color: #2fb731;
+  }
+  .btn_cv {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a74c;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Sono", sans-serif;
+    font-weight: bold;
+  }
+}
+/* SECTION SKILLS */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  
+  .skills_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .skills_square {
+    display: flex;
+    .square {
+      padding: 10px;
+      margin-left: 20px;
+      width: 100px;
+      height: 70px;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+  }
+  .icons_skills {
+    font-size: 3.5rem;
+  }
+}
+/* ANIMAÇÕES */
+.animation0:hover,
+.animation1:hover,
+.animation2:hover,
+.animation3:hover,
+.bi-linkedin:hover,
+.bi-instagram:hover,
+.bi-github:hover,
+.bi-whatsapp:hover {
+  transform: scale(1.2);
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transition-delay: 5ms;
+  transform: rotateY(360deg);
+}
+.bi-instagram:hover {
+  color: #fff;
+}
+.bi-linkedin:hover {
+  color: #fff;
+}
+.bi-whatsapp:hover {
+  color: #198754;
+}
+.btn_cv:hover {
+  background-color: #198754;
+  transition: ease-in 1s;
+}
+.square:hover {
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transition-delay: 5ms;
+  transform: scale(1.5);
+  transform: rotateX(360deg);
+}
+// .hidden {
+//   opacity: 0;
+//   filter: blur(3px);
+//   transform: translateY(50%);
+//   transition: all ease-out 1.3s;
+// }
+// .show {
+//   opacity: 1;
+//   filter: blur(0);
+//   transform: translateY(0);
+// }

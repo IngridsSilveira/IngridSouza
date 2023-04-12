@@ -1,8 +1,9 @@
 import Header from '../Header/Header'
+import Section1 from '../Body/Sct_Skills_Image'
 
 export default function App() {
   return (
-    <div className="bg-div bg-black">
+    <>
     {/* <div id="preloader">
         <h1>Loading</h1>
         <p class="c-loader"></p>
@@ -12,6 +13,7 @@ export default function App() {
         <p class="c-loader"></p>
     </div> */}
       <Header />
-    </div>
+      <Section1 />
+    </>
   );
 }
