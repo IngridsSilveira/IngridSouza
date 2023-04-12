@@ -1,4 +1,4 @@
-import "./header.scss";
+import "./styles.scss";
 import { useState } from "react";
 
 const menuItems = ["Home", "Projects", "Contact"];

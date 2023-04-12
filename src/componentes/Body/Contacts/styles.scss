@@ -1,0 +1,65 @@
+/* FORMULARIO */
+.formulario {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.descricao_form {
+  color: #ccc;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+}
+.input_label {
+  font-family: "Rubik", sans-serif;
+  color: #f4f4f4;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.input {
+  border: 2px solid;
+  border-radius: 3px;
+  margin: 15px 0;
+  height: 40px;
+  width: 100%;
+}
+.input.mensagem {
+  height: 80px;
+}
+.input::placeholder {
+  font-size: 0.9rem;
+  font-family: "Rubik", sans-serif;
+}
+
+
+.contato_textos_form {
+    width: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .descricao_form {
+    width: 250px;
+    text-align: center;
+  }
+  .input,
+  .btn_contato {
+    width: 100%;
+  }
+
+  .input:hover {
+    border: 2px solid #198754;
+  }

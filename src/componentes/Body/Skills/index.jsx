@@ -1,6 +1,6 @@
-import "./sct-skills-image.scss";
+import "./styles.scss";
 
-export default function Sct_Skills_Image() {
+export default function Skills() {
   return (
     <>
     <section className="background bg-image-black container-fluid">
@@ -86,4 +86,3 @@ export default function Sct_Skills_Image() {
     </>
   );
 }
-

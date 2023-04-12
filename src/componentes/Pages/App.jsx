@@ -1,5 +1,7 @@
-import Header from '../Header/Header'
-import Section1 from '../Body/Sct_Skills_Image'
+import Header from '../Header'
+import SectionSkills from '../Body/Skills'
+import Projects from '../Body/Projects';
+import Contacs from '../Body/Contacts';
 
 export default function App() {
   return (
@@ -13,7 +15,9 @@ export default function App() {
         <p class="c-loader"></p>
     </div> */}
       <Header />
-      <Section1 />
+      <SectionSkills />
+      <Projects />
+      <Contacs />
     </>
   );
 }

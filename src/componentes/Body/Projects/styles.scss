@@ -1,0 +1,75 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .projects_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+.carousel-item {
+  background-color: transparent;
+  .carousel-div {
+    display: flex !important;
+    flex-direction: column;
+    .img-carousel {
+      display: block;
+      width: 100%;
+      height: 10%;
+      border-radius: 5px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .botoes {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .img-blog {
+      height: 600px;
+      width: 900px;
+    }
+    /*IMAGEM LEGENDA*/
+    .img_effect {
+      margin: 0;
+      float: left;
+      position: relative;
+    }
+    .img_effect > span strong {
+      display: none;
+    }
+    .img_effect span:hover .desc {
+      display: block;
+      background: #111;
+      opacity: 0.75;
+      color: #fff;
+      position: absolute;
+      bottom: 11px;
+      left: 11px;
+      padding: 10px;
+      margin: 0;
+      width: auto;
+      border-radius: 5px;
+    }
+    .img_effect span:hover .desc strong {
+      display: block;
+      font-size: 1.2rem;
+    }
+    .img-carousel:hover {
+      cursor: pointer;
+      transition-timing-function: ease-out;
+      transition-duration: 1s;
+      transition-delay: 5ms;
+    }
+  }
+}
