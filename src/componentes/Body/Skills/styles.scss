@@ -156,7 +156,6 @@
   .background {
     flex-direction: column;
     .name {
-      background-color: aquamarine;
       font-size: 2.5rem;
       margin-top: 55px;
     }
@@ -190,9 +189,6 @@
 @media screen and (min-width: 768px) {
   .background {
     flex-direction: row;
-    .name {
-      background-color: blue;
-    }
   }
   .skills .skills_square {
     width: 100%;
@@ -205,7 +201,6 @@
   .background {
     .name {
       font-size: 2.8rem;
-      background-color: orange;
     }
   }
   .about {

@@ -25,15 +25,15 @@ export default function Header() {
           <img src="images/favicon.ico" alt="logo" />
         </NavbarBrand>
         <NavbarBrand href="https://ingridssilveira.github.io/IngridSouza/">
-          <button class="btn-bg rounded-circle">
-            <i class="btn-mode bi bi-brightness-high"></i>
+          <button className="btn-bg rounded-circle">
+            <i className="btn-mode bi bi-brightness-high"></i>
           </button>
         </NavbarBrand>
         <NavbarBrand>
-          <button id="btn-en" class="btn-translate bi bi-translate">
+          <button id="btn-en" className="btn-translate bi bi-translate">
             EN
           </button>
-          <button id="btn-pt" class="btn-translate bi bi-translate">
+          <button id="btn-pt" className="btn-translate bi bi-translate">
             PT
           </button>
         </NavbarBrand>
@@ -47,7 +47,7 @@ export default function Header() {
                   className="menu-link"
                   key={menuItem}
                 >
-                  <li
+                  <span
                     className={
                       selectedMenu === menuItem
                         ? "nav-item menu-item active"
@@ -56,7 +56,7 @@ export default function Header() {
                     onClick={() => setSelectMenu(menuItem)}
                   >
                     {menuItem}
-                  </li>
+                  </span>
                 </NavLink>
               ))}
             </NavItem>

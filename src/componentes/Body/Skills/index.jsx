@@ -3,7 +3,7 @@ import "./styles.scss";
 export default function Skills() {
   return (
     <>
-    <section className="background bg-image-black container-fluid">
+    <section id="Home" className="background bg-image-black container-fluid">
          <div className="background_titles hidden">
             <h1 className="name" id="name">Ingrid de Souza</h1>
             <h2 className="profission" id="profission">Web Developer</h2>

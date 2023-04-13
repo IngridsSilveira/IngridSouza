@@ -1,0 +1,31 @@
+@use "../../sass/variables";
+@use "../../sass/mixins";
+
+.footer {
+  @include mixins.flex-center;
+  justify-content: space-around !important;
+  padding: 20px;
+  font-family: variables.$font-poppins;
+  color: variables.$white-color;
+
+  .footer_copy a {
+    color: variables.$white-color;
+    text-decoration: none;
+  }
+  .icons_first {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  .bi-instagram {
+    color: variables.$instagram-color;
+  }
+  .bi-linkedin {
+    color: variables.$linkedin-color;
+  }
+  .bi-github {
+    color: variables.$white-color;
+  }
+  .bi-whatsapp {
+    color: variables.$whatsapp-color;
+  }
+}

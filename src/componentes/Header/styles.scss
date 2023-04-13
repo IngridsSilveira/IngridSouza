@@ -22,7 +22,9 @@
       font-weight: bold;
       cursor: pointer;
       text-transform: uppercase;
-      li {
+      span {
+         width: 100%;
+        display: block;
         padding: 7px;
       }
       .active {
@@ -53,9 +55,9 @@
 @media screen and (min-width: 0) {
   .menuItem {
     flex-direction: column !important;
-    .menu-link {
-      width: 100%;
-    }
+  } 
+  .nav-link {
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {

@@ -1,7 +1,8 @@
 import Header from '../Header'
 import SectionSkills from '../Body/Skills'
 import Projects from '../Body/Projects';
-import Contacs from '../Body/Contacts';
+import Contacts from '../Body/Contacts';
+import Footer from '../Footer';
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       <Header />
       <SectionSkills />
       <Projects />
-      <Contacs />
+      <Contacts />
+      <Footer />
     </>
   );
 }
