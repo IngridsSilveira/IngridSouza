@@ -1,48 +1,65 @@
+@use "../../sass/variables";
+@use "../../sass/mixins";
+
 .header {
   position: fixed;
   z-index: 3;
-
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .btn-brightness {
+  width: 100%;
+  .btn-bg {
     margin-top: 5px;
     width: 50px;
     height: 50px;
     background-color: transparent;
-    color: #2cadad;
+    color: variables.$primary-color;
     font-size: 1.5rem;
     border: none;
   }
-  .menu-link {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    li {
-      padding: 6px;
-      text-decoration: uppercase;
-    }
-    .active {
-      background: #2cadad;
-      border-radius: 5px;
+  .menuItem {
+    @include mixins.flex-center;
+    .menu-link {
+      color: variables.$white-color;
+      font-family: variables.$font-rubik;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+      li {
+        padding: 7px;
+      }
+      .active {
+        background: variables.$primary-color;
+        border-radius: 5px;
+      }
     }
   }
   .btn-translate {
     margin-left: 8px;
     text-decoration: none;
-    color: #fff;
-    background-color: #000;
+    color: variables.$white-color;
+    background-color: variables.$black-color;;
     padding: 5px;
     text-align: center;
     border-radius: 10px;
-    font-family: "Sono", sans-serif;
+    font-family: variables.$font-sono;
     font-weight: bold;
     border: none;
   }
   .btn-translate:hover {
     color: #09d5d5;
+  }
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+}
+@media screen and (min-width: 0) {
+  .menuItem {
+    flex-direction: column !important;
+    .menu-link {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .menuItem {
+    flex-direction: row !important;
   }
 }

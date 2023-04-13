@@ -1,41 +1,41 @@
+@use "../../../sass/variables";
+@use "../../../sass/mixins";
+
 .background {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include mixins.flex-center;
+  justify-content: space-between !important;
   flex-direction: row;
   height: 589px;
   width: 100%;
   padding: 50px;
-
   .name {
-    font-family: "Sono", sans-serif;
+    font-family: variables.$font-sono;
     text-transform: uppercase;
     margin-bottom: 5px;
-    font-size: 3.5rem;
   }
   .profission {
-    font-family: "Sono", sans-serif;
+    font-family: variables.$font-sono;
     letter-spacing: 2px;
     text-align: center;
   }
 }
 .bg-image-black {
-  background: url("../../../../public/images/coding-wallpaper.png") center / cover;
+  background: url("../../../../public/images/coding-wallpaper.png") center /
+    cover;
 }
 .bg-image-white {
   background: url("../../../../public/images/wallp-white.png") center / cover;
   filter: brightness(90%);
-  color: #000 !important;
+  color: variables.$black-color !important;
 }
 .titulos-black {
-  color: #000 !important;
+  color: variables.$black-color !important;
 }
-.bg-branco {
-  background-color: #e6e6e6;
-  color: #f4f4f4;
-}
+// .bg-branco {
+//   background-color: #e6e6e6;
+//   color: #f4f4f4;
+// }
 
-/* WIDGET */
 .widget_title {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -43,16 +43,13 @@
 .widget_title_bar {
   width: 50px;
   height: 2px;
-  background-color: #2cadad;
+  background-color: variables.$primary-color;
   margin-top: 10px;
 }
-
-/*SECTION DO SOBRE MIM E DESCRIÇÃO */
 .about {
   padding: 20px;
   .description {
-    font-family: "Sono", sans-serif;
-    width: 550px;
+    font-family: variables.$font-sono;
     font-size: 1rem;
     margin-top: 10px;
     text-align: center;
@@ -60,60 +57,55 @@
   }
   .info {
     font-size: 0.9rem;
-    font-family: "Rubik", sans-serif;
+    font-family: variables.$font-rubik;
     text-align: center;
     margin-top: 10px;
-    color: #2cadad;
+    color: variables.$primary-color;
     font-style: italic;
     text-decoration: none;
   }
 }
 .div_icons_social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
   margin-top: 10px;
   .icons_first {
     font-size: 1.9rem;
     margin-left: 10px;
   }
   .bi-instagram {
-    color: #ca0080;
+    color: variables.$instagram-color;
   }
   .bi-linkedin {
-    color: #3385ff;
+    color: variables.$linkedin-color;
   }
   .bi-github {
-    color: #fff;
+    color: variables.$white-color;
   }
   .bi-whatsapp {
-    color: #2fb731;
+    color: variables.$whatsapp-color;
   }
   .btn_cv {
     margin-left: 8px;
     text-decoration: none;
-    color: #fff;
-    background-color: #28a74c;
+    color: variables.$white-color;
+    background-color: variables.$whatsapp-color;
     width: 30px;
     height: 30px;
     text-align: center;
     border-radius: 10px;
-    font-family: "Sono", sans-serif;
+    font-family: variables.$font-sono;
     font-weight: bold;
   }
 }
-/* SECTION SKILLS */
 .skills {
-  display: flex;
+  @include mixins.flex-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 100px;
-  
+
   .skills_title {
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: "Rubik", sans-serif;
+    font-family: variables.$font-rubik;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -134,33 +126,12 @@
     font-size: 3.5rem;
   }
 }
-/* ANIMAÇÕES */
-.animation0:hover,
-.animation1:hover,
-.animation2:hover,
-.animation3:hover,
-.bi-linkedin:hover,
-.bi-instagram:hover,
-.bi-github:hover,
-.bi-whatsapp:hover {
+.animation:hover {
   transform: scale(1.2);
   transition-timing-function: ease-in;
   transition-duration: 1s;
   transition-delay: 5ms;
   transform: rotateY(360deg);
-}
-.bi-instagram:hover {
-  color: #fff;
-}
-.bi-linkedin:hover {
-  color: #fff;
-}
-.bi-whatsapp:hover {
-  color: #198754;
-}
-.btn_cv:hover {
-  background-color: #198754;
-  transition: ease-in 1s;
 }
 .square:hover {
   transition-timing-function: ease-in;
@@ -180,3 +151,66 @@
 //   filter: blur(0);
 //   transform: translateY(0);
 // }
+
+@media screen and (min-width: 0) {
+  .background {
+    flex-direction: column;
+    .name {
+      background-color: aquamarine;
+      font-size: 2.5rem;
+      margin-top: 55px;
+    }
+  }
+  .about {
+    @include mixins.flex-center;
+    flex-direction: column;
+    padding: 0;
+    .description {
+      width: 350px;
+    }
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .widget_title,
+  .skills .skills_title {
+    margin-top: 0;
+  }
+  .skills .skills_square {
+    width: 450px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    .square {
+      margin: 20px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .background {
+    flex-direction: row;
+    .name {
+      background-color: blue;
+    }
+  }
+  .skills .skills_square {
+    width: 100%;
+    .square {
+      margin: 5px;
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .background {
+    .name {
+      font-size: 2.8rem;
+      background-color: orange;
+    }
+  }
+  .about {
+    .description {
+      width: 450px;
+    }
+  }
+}

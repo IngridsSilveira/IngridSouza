@@ -1,14 +1,15 @@
+@use "../../../sass/variables";
+@use "../../../sass/mixins";
+
 .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
   flex-direction: column;
   width: 100%;
 
   .projects_title {
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: "Rubik", sans-serif;
+    font-family: variables.$font-rubik;
     text-transform: uppercase;
     letter-spacing: 1px;
   }

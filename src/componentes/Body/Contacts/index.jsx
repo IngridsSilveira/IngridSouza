@@ -26,17 +26,11 @@ export default function Contacs() {
                         <span className="input-mensagem-erro"></span>
                     </div>
                     <div className="input-container">
-                        <input name="subject" id="assunto" className="input form-control" type="text" placeholder="Subject:"
-                            data-tipo="assunto" minlength="10" required/>
-                        <span className="input-mensagem-erro"></span>
-                    </div>
-                    <div className="input-container">
                         <textarea name="message" id="mensagem" className="input mensagem form-control" cols="30" rows="10"
                             placeholder="Message:" data-tipo="mensagem" minlength="50" required></textarea>
                         <span className="input-mensagem-erro"></span>
                     </div>
-                    <input id="submit" type="submit" className="btn btn-success btn_contato" value="Send"
-                        data-bs-toggle="modal" data-bs-target="#modalExemplo"/>
+                    <input id="submit" type="submit" className="btn btn-success btn_contato" value="Send"/>
                 </fieldset>
             </form>
       </section>
