@@ -9,49 +9,49 @@ import {
 
 const items = [
   {
-    src: "/images/projetos/blog.png",
+    src: "/images/projetos/blog.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/blog',
     hrefDemo: 'https://ingridssilveira.github.io/blog/',
     altText: "Blog about korean dramas",
     key: 1,
   },
   {
-    src: "/images/projetos/star.png",
+    src: "/images/projetos/star.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/starWars-Planets',
     hrefDemo: 'https://ingridssilveira.github.io/starWars-Planets/',
     altText: "Consuming API about Star Wars Planets",
     key: 2,
   },
   {
-    src: "/images/projetos/alura.png",
+    src: "/images/projetos/alura.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/AluraGeek',
     hrefDemo: 'https://ingridssilveira.github.io/AluraGeek/',
     altText: "E-commerce Alura Geek",
     key: 3,
   },
   {
-    src: "/images/projetos/lp.png",
+    src: "/images/projetos/lp.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/LandingPage01',
     hrefDemo: 'https://ingridssilveira.github.io/LandingPage01/',
     altText: "Landing Page E-mail",
     key: 4,
   },
   {
-    src: "/images/projetos/animes.png",
+    src: "/images/projetos/animes.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/Lista_Animes',
     hrefDemo: 'https://ingridssilveira.github.io/Lista_Animes/',
     altText: "CRUD with animes list",
     key: 5,
   },
   {
-    src: "/images/projetos/login.png",
+    src: "/images/projetos/login.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/loginSite',
     hrefDemo: 'https://ingridssilveira.github.io/loginSite/',
     altText: "Login page with validation",
     key: 6,
   },
   {
-    src: "/images/projetos/pet.png",
+    src: "/images/projetos/pet.webp",
     hrefGithub: 'https://github.com/IngridsSilveira/petInfo',
     hrefDemo: 'https://ingridssilveira.github.io/petInfo/',
     altText: "Landing Page with information about pets",
@@ -101,12 +101,14 @@ export default function Projects(args) {
             <a
               className="btn btn-success"
               href={item.hrefGithub}
+              aria-label="view repository"
             >
               Repositório
             </a>
             <a
               className="btn btn-success"
               href={item.hrefDemo}
+              aria-label="view demo"
             >
               Demo
             </a>

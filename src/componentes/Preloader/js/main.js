@@ -18,10 +18,8 @@ window.addEventListener("scroll", btnScroll);
 /* FUNÇÃO PARA RODAR O PRELOADER */
 const windowLoading = () => {
   let loader = document.getElementById("preloader");
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 1000);
+  loader.style.display = "none";
 };
-setTimeout(windowLoading, 3000);
+setTimeout(windowLoading, 1000);
 
 export { topWindow, windowLoading };

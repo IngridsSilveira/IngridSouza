@@ -10,7 +10,8 @@ export default function Footer() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="ttps://github.com/IngridsSilveira"
+              href="https://ingriddev.netlify.app/"
+              aria-label="portfilio page"
             >
               Ingrid Souza 🔥
             </a>
@@ -22,6 +23,7 @@ export default function Footer() {
             rel="noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/ingridssilveira/"
+            aria-label="linkedin page"
           >
             <i className="bi bi-linkedin"></i>
           </a>
@@ -30,6 +32,7 @@ export default function Footer() {
             rel="noreferrer"
             target="_blank"
             href="https://www.instagram.com/dev_ingrid/"
+            aria-label="instagram page"
           >
             <i className="bi bi-instagram"></i>
           </a>
@@ -39,6 +42,7 @@ export default function Footer() {
             rel="noreferrer"
             target="_blank"
             href="https://github.com/IngridsSilveira"
+            aria-label="github page"
           >
             <i className="bi bi-github"></i>
           </a>
@@ -48,6 +52,7 @@ export default function Footer() {
             rel="noreferrer"
             href="https://api.whatsapp.com/send?phone=552179661084"
             target="_blank"
+            aria-label="whatsapp page"
           >
             <i className="bi bi-whatsapp"></i>
           </a>

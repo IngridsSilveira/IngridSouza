@@ -27,15 +27,15 @@ export default function Header() {
           <img src="images/favicon.ico" alt="logo" />
         </NavbarBrand>
         <NavbarBrand>
-          <button className="btn-bg rounded-circle" onClick={btnToggleColor}>
+          <button className="btn-bg rounded-circle" onClick={btnToggleColor} aria-label="btn-mode">
             <i className="btn-mode bi bi-brightness-high"></i>
           </button>
         </NavbarBrand>
         <NavbarBrand>
-          <button id="btn-en" className="btn-translate bi bi-translate">
+          <button id="btn-en" className="btn-translate bi bi-translate" aria-label="btn-en">
             EN
           </button>
-          <button id="btn-pt" className="btn-translate bi bi-translate">
+          <button id="btn-pt" className="btn-translate bi bi-translate" aria-label="btn-pt">
             PT
           </button>
         </NavbarBrand>

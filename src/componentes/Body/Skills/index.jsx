@@ -16,21 +16,22 @@ export default function Skills() {
             </p>
 
             <div className="div_icons_social">
-                <a className="animation" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ingridssilveira/"><i
+                <a className="animation" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ingridssilveira/" aria-label="linkedin page"><i
                         className="icons_first bi bi-linkedin"></i></a>
 
-                <a className="animation" target="_blank" rel="noreferrer" href="https://www.instagram.com/dev_ingrid/"><i
+                <a className="animation" target="_blank" rel="noreferrer" href="https://www.instagram.com/dev_ingrid/" aria-label="instagram page"><i
                         className="icons_first bi bi-instagram"></i></a>
 
-                <a className="animation" target="_blank" rel="noreferrer" href="https://github.com/IngridsSilveira"><i
+                <a className="animation" target="_blank" rel="noreferrer" href="https://github.com/IngridsSilveira" aria-label="github page"><i
                         className="icons_first bi bi-github"></i></a>
 
-                <a className="animation" href="https://api.whatsapp.com/send?phone=552179661084" target="_blank" rel="noreferrer">
+                <a className="animation" href="https://api.whatsapp.com/send?phone=552179661084" target="_blank" rel="noreferrer" aria-label="whatsapp page">
                     <i className="icons_first bi bi-whatsapp"></i>
                 </a>
                 <a className="btn_cv animation"
                     href="https://drive.google.com/file/d/1mUBqfvxftXu7Tvl4ElfgZVnRj0WmjNhe/view?usp=share_link"
-                    target="_blank" rel="noreferrer">
+                    target="_blank" rel="noreferrer"
+                    aria-label="curriculum page">
                     CV
                 </a>
             </div>
