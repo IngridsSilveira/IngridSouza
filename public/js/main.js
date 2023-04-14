@@ -1,15 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-function topWindow() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+const observar = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("show");
+      } else {
+        entrada.target.classList.remove("show");
+      }
     });
-  }
-  function btnScroll() {
-    if (window.scrollY === 0) {
-      document.querySelector(".top").style.display = "none";
-    } else {
-      document.querySelector(".top").style.display = "block";
-    }
-  }
-  window.addEventListener("scroll", btnScroll);
+  });
+  
+  const esconderElementos = document.querySelectorAll(".hidden");
+  esconderElementos.forEach((elemento) => observar.observe(elemento));
+  

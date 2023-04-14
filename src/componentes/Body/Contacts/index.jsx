@@ -3,7 +3,7 @@ import "./styles.scss";
 export default function Contacs() {
   return (
     <>
-      <section id="Contact" className="fSection">
+      <section id="Contact" className="fSection hidden">
             <div className="widget_title hidden">
                 <h2 className="title_Contact ">Contact</h2>
             <div className="widget_title_bar"></div>

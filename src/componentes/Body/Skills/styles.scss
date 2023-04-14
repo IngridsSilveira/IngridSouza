@@ -140,17 +140,17 @@
   transform: scale(1.5);
   transform: rotateX(360deg);
 }
-// .hidden {
-//   opacity: 0;
-//   filter: blur(3px);
-//   transform: translateY(50%);
-//   transition: all ease-out 1.3s;
-// }
-// .show {
-//   opacity: 1;
-//   filter: blur(0);
-//   transform: translateY(0);
-// }
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateY(50%);
+  transition: all ease-out 1.3s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
 
 @media screen and (min-width: 0) {
   .background {

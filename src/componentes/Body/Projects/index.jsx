@@ -117,7 +117,7 @@ export default function Projects(args) {
   });
 
   return (
-    <section className="projects container" id="Projects">
+    <section className="projects container hidden" id="Projects">
       <div className="widget_title hidden">
         <h2 className="projects_title">Projects</h2>
         <div className="widget_title_bar"></div>
