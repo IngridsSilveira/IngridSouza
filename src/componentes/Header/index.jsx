@@ -10,6 +10,8 @@ import {
   NavLink,
 } from "reactstrap";
 
+import {btnToggleColor} from './js/main.js'
+
 const menuItems = ["Home", "Projects", "Contact"];
 
 export default function Header() {
@@ -24,8 +26,8 @@ export default function Header() {
         <NavbarBrand href="https://ingridssilveira.github.io/IngridSouza/">
           <img src="images/favicon.ico" alt="logo" />
         </NavbarBrand>
-        <NavbarBrand href="https://ingridssilveira.github.io/IngridSouza/">
-          <button className="btn-bg rounded-circle">
+        <NavbarBrand>
+          <button className="btn-bg rounded-circle" onClick={btnToggleColor}>
             <i className="btn-mode bi bi-brightness-high"></i>
           </button>
         </NavbarBrand>

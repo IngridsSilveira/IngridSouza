@@ -1,3 +1,6 @@
+@use "../../sass/variables";
+@use "../../sass/mixins";
+
 .top {
   position: fixed;
   right: 10px;
@@ -7,46 +10,52 @@
   display: none;
 }
 .top i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
   color: #09d5d5;
   border-radius: 50px;
   padding: 5px;
-  font-size: 1.5rem;
-}
-.top i:hover {
-  color: #fff;
+  font-size: 2rem;
+  &:hover {
+    color: variables.$white-color;
+  }
 }
 
 /* PRELOADER */
 #preloader {
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-family: "Sono", sans-serif;
+  background: variables.$black-color;
+  @include mixins.flex-center;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
+  .c-loader {
+    animation: pulsando 3s infinite;
+    border-radius: 60%;
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+  }
+  .red {
+    background-color: variables.$palete-red;
+  }
+  .green {
+    background-color: variables.$palete-green;
+  }
+  .orange {
+    background-color: variables.$palete-orange;
+  }
+  .blue {
+    background-color: variables.$palete-blue;
+  }
+  .pink {
+    background-color: variables.$palete-pink;
+  }
 }
-.c-loader {
-  animation: pulsando 3s infinite;
-  border-radius: 40%;
-  height: 10px;
-  width: 10px;
-  margin-left: 5px;
-  margin-top: 20px;
-  background-color: #3385ff;
-}
-
 @keyframes pulsando {
   0%,
   100% {
     transform: scale(0.5);
+    transform: translate(50px);
   }
   50% {
     transform: scale(1.2);

@@ -5,7 +5,7 @@ export default function Contacs() {
     <>
       <section id="Contact" className="fSection hidden">
             <div className="widget_title hidden">
-                <h2 className="title_Contact ">Contact</h2>
+                <h3 className="title_Contact ">Contact</h3>
             <div className="widget_title_bar"></div>
             </div>
             <p className="description hidden" id="wantContact">Want to contact me?</p>

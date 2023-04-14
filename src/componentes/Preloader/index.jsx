@@ -5,12 +5,11 @@ export default function Preloader() {
   return (
     <>
       <div id="preloader" onLoad={windowLoading}>
-        <h1>Loading</h1>
-        <p className="c-loader"></p>
-        <p className="c-loader"></p>
-        <p className="c-loader"></p>
-        <p className="c-loader"></p>
-        <p className="c-loader"></p>
+        <p className="c-loader red"></p>
+        <p className="c-loader green"></p>
+        <p className="c-loader orange"></p>
+        <p className="c-loader blue"></p>
+        <p className="c-loader pink"></p>
       </div>
     <div className="top" onClick={topWindow}><i className="bi bi-arrow-up-circle-fill"></i></div>
 

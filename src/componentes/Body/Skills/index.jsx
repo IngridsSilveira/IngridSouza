@@ -1,9 +1,10 @@
 import "./styles.scss";
+import Loading from "../../../js/main.js";
 
 export default function Skills() {
   return (
     <>
-    <section id="Home" className="background bg-image-black container-fluid hidden">
+    <section id="Home" className="background bg-image-black container-fluid hidden" onLoad={Loading}>
          <div className="background_titles hidden">
             <h1 className="name" id="name">Ingrid de Souza</h1>
             <h2 className="profission" id="profission">Web Developer</h2>
@@ -38,7 +39,7 @@ export default function Skills() {
 
     <section className="skills hidden">
      <div className="widget_title hidden">
-            <h2 className="skills_title">Skills</h2>
+            <h3 className="skills_title">Skills</h3>
             <div className="widget_title_bar"></div>
         </div>
 

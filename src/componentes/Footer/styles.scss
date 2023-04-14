@@ -6,11 +6,13 @@
   justify-content: space-around !important;
   padding: 20px;
   font-family: variables.$font-poppins;
-  color: variables.$white-color;
-
-  .footer_copy a {
+  .footer_copy h4, a {
+    font-size: 1.3rem;
     color: variables.$white-color;
     text-decoration: none;
+    &:hover {
+      font-size: 1rem;
+    }
   }
   .icons_first {
     font-size: 1.5rem;

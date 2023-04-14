@@ -24,6 +24,4 @@ const windowLoading = () => {
 };
 setTimeout(windowLoading, 3000);
 
-
-
 export { topWindow, windowLoading };

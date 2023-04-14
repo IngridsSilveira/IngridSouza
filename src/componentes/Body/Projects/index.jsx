@@ -119,7 +119,7 @@ export default function Projects(args) {
   return (
     <section className="projects container hidden" id="Projects">
       <div className="widget_title hidden">
-        <h2 className="projects_title">Projects</h2>
+        <h3 className="projects_title">Projects</h3>
         <div className="widget_title_bar"></div>
       </div>
 
@@ -128,6 +128,7 @@ export default function Projects(args) {
         next={next}
         previous={previous}
         {...args}
+        className="hidden"
       >
         <CarouselIndicators
           items={items}

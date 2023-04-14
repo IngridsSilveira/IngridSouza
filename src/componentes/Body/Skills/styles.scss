@@ -103,12 +103,6 @@
   margin-bottom: 100px;
 
   .skills_title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: variables.$font-rubik;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
     margin-top: 80px;
   }
   .skills_square {
@@ -139,17 +133,6 @@
   transition-delay: 5ms;
   transform: scale(1.5);
   transform: rotateX(360deg);
-}
-.hidden {
-  opacity: 0;
-  filter: blur(3px);
-  transform: translateY(50%);
-  transition: all ease-out 1.3s;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
 }
 
 @media screen and (min-width: 0) {

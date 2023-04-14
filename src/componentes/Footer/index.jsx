@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer className="footer containter-fluid bg-dark hidden">
         <div className="footer_copy">
-          <p>
+          <h4>
             Developed by{" "}
             <a
               target="_blank"
@@ -14,7 +14,7 @@ export default function Footer() {
             >
               Ingrid Souza 🔥
             </a>
-          </p>
+          </h4>
         </div>
         <div className="footer_area">
           <a

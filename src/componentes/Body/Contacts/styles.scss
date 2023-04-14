@@ -41,4 +41,26 @@
   .btn_contact {
     width: 100%;
   }
-} 
+}
+
+@media screen and (min-width: 0) {
+  .fSection {
+    .form {
+      width: 50%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .fSection {
+    .form {
+      width: 50%;
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .fSection {
+    .form {
+      width: 760px;
+    }
+  }
+}
