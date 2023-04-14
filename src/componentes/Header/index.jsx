@@ -10,7 +10,7 @@ import {
   NavLink,
 } from "reactstrap";
 
-import {btnToggleColor} from './js/main.js'
+import {btnToggleColor, updateLanguage} from './js/main.js'
 
 const menuItems = ["Home", "Projects", "Contact"];
 
@@ -32,10 +32,10 @@ export default function Header() {
           </button>
         </NavbarBrand>
         <NavbarBrand>
-          <button id="btn-en" className="btn-translate bi bi-translate" aria-label="btn-en">
+          <button id="btn-en" className="btn-translate bi bi-translate" aria-label="btn-en" onClick={(en)=>{updateLanguage('en')}}>
             EN
           </button>
-          <button id="btn-pt" className="btn-translate bi bi-translate" aria-label="btn-pt">
+          <button id="btn-pt" className="btn-translate bi bi-translate" aria-label="btn-pt" onClick={()=>{updateLanguage("pt")}}>
             PT
           </button>
         </NavbarBrand>

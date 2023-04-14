@@ -25,7 +25,7 @@ export default function Skills() {
                 <a className="animation" target="_blank" rel="noreferrer" href="https://github.com/IngridsSilveira" aria-label="github page"><i
                         className="icons_first bi bi-github"></i></a>
 
-                <a className="animation" href="https://api.whatsapp.com/send?phone=552179661084" target="_blank" rel="noreferrer" aria-label="whatsapp page">
+                <a className="animation" href="https://api.whatsapp.com/send?phone=5521979661084" target="_blank" rel="noreferrer" aria-label="whatsapp page">
                     <i className="icons_first bi bi-whatsapp"></i>
                 </a>
                 <a className="btn_cv animation"

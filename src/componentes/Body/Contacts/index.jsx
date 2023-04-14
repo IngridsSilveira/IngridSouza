@@ -11,9 +11,7 @@ export default function Contacs() {
             <p className="description hidden" id="wantContact">Want to contact me?</p>
             <p className="form_description hidden" id="preenchaContact">Fill out the form and I will contact you as soon as
                 possible.</p>
-            <form id="form" action="https://api.staticforms.xyz/submit" method="POST" className="form hidden">
-                <input type="hidden" name="accessKey" value="276987cd-09d2-478e-b968-0b76c74b811c"/>
-                <input type="hidden" name="redirectTo" value="https://ingridssilveira.github.io/IngridSouza/"/>
+            <form id="form" action="https://wa.me/5521979661084?text=Tenho%20interesse%20em%seus%20sites" className="form hidden">
                 <fieldset>
                     <div className="input-container">
                         <input name="name" id="nome" className="input form-control" type="text" placeholder="Name:"
