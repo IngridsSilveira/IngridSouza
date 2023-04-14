@@ -4,7 +4,7 @@ const btnToggleColor = () => {
   let background = document.querySelector(".background");
   let titles = [...document.querySelectorAll("h3")];
   let paragraphs = [...document.querySelectorAll("p")];
-  let bi_github = document.querySelector(".bi-github ")
+  let bi_github = document.querySelector(".bi-github");
 
   icon.classList.toggle("bi-moon");
   bg_div.classList.toggle("bg-black");
@@ -15,6 +15,6 @@ const btnToggleColor = () => {
   paragraphs.forEach((el) => {
     el.classList.toggle("titulos-black");
   });
-  bi_github.toggle("titulos-black")
+  bi_github.classList.toggle("bi-github-black");
 };
 export { btnToggleColor };
