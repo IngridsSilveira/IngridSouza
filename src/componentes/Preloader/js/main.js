@@ -15,11 +15,4 @@ function btnScroll() {
 }
 window.addEventListener("scroll", btnScroll);
 
-/* FUNÇÃO PARA RODAR O PRELOADER */
-const windowLoading = () => {
-  let loader = document.getElementById("preloader");
-  loader.style.display = "none";
-};
-setTimeout(windowLoading, 1000);
-
-export { topWindow, windowLoading };
+export { topWindow };
