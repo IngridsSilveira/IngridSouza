@@ -5,9 +5,13 @@ import { topWindow } from "./js/main.js";
 export default function Preloader() {
   useEffect(() => {
     let loader = document.getElementById("preloader");
+
     setTimeout(() => {
       loader.style.display = "none";
     }, 1500);
+    return () => {
+      clearTimeout()
+    }
   }, []);
 
   return (
