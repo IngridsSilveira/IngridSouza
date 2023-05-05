@@ -8,7 +8,7 @@ export default function Preloader() {
     setTimeout(() => {
       loader.style.display = "none";
     }, 1500);
-  });
+  }, []);
 
   return (
     <>
