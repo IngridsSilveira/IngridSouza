@@ -6,7 +6,9 @@
   flex-direction: column;
   width: 100%;
 }
-
+.carousel-control-next, .carousel-control-prev {
+  height: 90%;
+}
 .carousel-div {
   display: flex !important;
   flex-direction: column;

@@ -28,7 +28,7 @@ export default function Contacs() {
                             placeholder="Message:" data-tipo="mensagem" minLength="50" required></textarea>
                         <span className="input-mensagem-erro"></span>
                     </div>
-                    <input id="submit" type="submit" className="btn btn-success btn_contact" value="Send"/>
+                    <input id="submit" type="submit" className="btn btn-success btn_contact" value="Send" target='_blank'/>
                 </fieldset>
             </form>
       </section>

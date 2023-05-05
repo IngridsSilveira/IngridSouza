@@ -102,6 +102,8 @@ export default function Projects(args) {
               className="btn btn-success"
               href={item.hrefGithub}
               aria-label="view repository"
+              target='_blank'
+              rel="noreferrer"
             >
               Repositório
             </a>
@@ -109,6 +111,8 @@ export default function Projects(args) {
               className="btn btn-success"
               href={item.hrefDemo}
               aria-label="view demo"
+              target='_blank'
+              rel="noreferrer"
             >
               Demo
             </a>
