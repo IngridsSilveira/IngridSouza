@@ -1,6 +1,6 @@
 
 # **My Website**
-Personal website, here I demonstrate all my knowledge and learning so far. I'm always updating and bringing new things!!
+This is my portfolio, I'm always updating and bringing new things!!
 
  Take a look and if you want to get in touch, just fill out the form!!
 * <a href="https://ingriddev.netlify.app/">See more.</a>
