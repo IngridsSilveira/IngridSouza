@@ -11,7 +11,7 @@ export default function Skills() {
         </div>
 
         <div className="about hidden">
-            <p className="description" id="aboutMe">I'm a 22-year-old web developer from Brasil, involved in web development since 2021.</p>
+            <p className="description" id="aboutMe">I'm a 23-year-old web developer from Brasil, involved in web development since 2021.</p>
             <p className="info" id="info"><a className="info" href="#contact">For more information contact me!!</a>
             </p>
 
@@ -27,12 +27,6 @@ export default function Skills() {
 
                 <a className="animation" href="https://api.whatsapp.com/send?phone=5521979661084" target="_blank" rel="noreferrer" aria-label="whatsapp page">
                     <i className="icons_first bi bi-whatsapp"></i>
-                </a>
-                <a className="btn_cv animation"
-                    href="https://drive.google.com/file/d/1mUBqfvxftXu7Tvl4ElfgZVnRj0WmjNhe/view?usp=share_link"
-                    target="_blank" rel="noreferrer"
-                    aria-label="curriculum page">
-                    CV
                 </a>
             </div>
         </div>
