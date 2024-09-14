@@ -50,15 +50,6 @@
     text-align: center;
     letter-spacing: 2px;
   }
-  .info {
-    font-size: 0.9rem;
-    font-family: variables.$font-rubik;
-    text-align: center;
-    margin-top: 10px;
-    color: variables.$primary-color;
-    font-style: italic;
-    text-decoration: none;
-  }
 }
 .div_icons_social {
   @include mixins.flex-center;
@@ -82,18 +73,6 @@
   .bi-whatsapp {
     color: variables.$whatsapp-color;
   }
-  .btn_cv {
-    margin-left: 8px;
-    text-decoration: none;
-    color: variables.$white-color;
-    background-color: variables.$whatsapp-color;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 10px;
-    font-family: variables.$font-sono;
-    font-weight: bold;
-  }
 }
 .skills {
   @include mixins.flex-center;
@@ -107,11 +86,14 @@
     display: flex;
     .square {
       padding: 10px;
-      margin-left: 20px;
       width: 100px;
       height: 70px;
       border-radius: 5px;
       background-color: transparent;
+      .square_alinhado {
+        @include mixins.flex-center;
+        flex-direction: column;
+      }
     }
   }
   .icons_skills {
@@ -137,7 +119,7 @@
   .background {
     flex-direction: column;
     .name {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       margin-top: 55px;
     }
   }

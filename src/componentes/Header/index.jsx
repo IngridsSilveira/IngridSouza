@@ -15,13 +15,13 @@ import {btnToggleColor, updateLanguage} from './js/main.js'
 const menuItems = ["Home", "Projects", "Contact"];
 
 export default function Header() {
-  const [selectedMenu, setSelectMenu] = useState(menuItems[-0]);
+  const [selectedMenu, setSelectMenu] = useState(menuItems[0]);
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-dark header">
+    <header className="bg-black header">
       <Navbar className="navbar-expand-lg justify-content-between" dark>
         <NavbarBrand href="https://ingridssilveira.github.io/IngridSouza/">
           <img src="images/favicon.ico" alt="logo" />

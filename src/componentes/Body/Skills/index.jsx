@@ -6,14 +6,12 @@ export default function Skills() {
     <>
     <section id="Home" className="background bg-image-black container-fluid hidden" onLoad={Loading}>
          <div className="background_titles hidden">
-            <h1 className="name" id="name">Ingrid de Souza</h1>
+            <h1 className="name" id="name">Ingrid S. Silveira</h1>
             <h2 className="profission" id="profission">Web Developer</h2>
         </div>
 
         <div className="about hidden">
-            <p className="description" id="aboutMe">I'm a 23-year-old web developer from Brasil, involved in web development since 2021.</p>
-            <p className="info" id="info"><a className="info" href="#contact">For more information contact me!!</a>
-            </p>
+            <p className="description" id="aboutMe">Specialized in creating modern and responsive digital experiences, with a focus on performance and usability.</p>
 
             <div className="div_icons_social">
                 <a className="animation" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ingridssilveira/" aria-label="linkedin page"><i
@@ -42,37 +40,37 @@ export default function Skills() {
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-html5" style={{color: "#ff651e"}}></i>
-                    
+                    <p>HTML</p>
                 </div>
             </div>
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-css3-alt" style={{color: "#0062f2"}}></i>
-                 
+                 <p>CSS</p>
                 </div>
             </div>
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-sass" style={{color: "#cf649a"}}></i>
-                   
+                    <p>SASS</p>
                 </div>
             </div>
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-square-js" style={{color: "#ffdf00"}}></i>
-                   
+                    <p>Javascript</p>
                 </div>
             </div>
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-react" style={{color: "#106fff"}}></i>
-                   
+                    <p>ReactJs</p>
                 </div>
             </div>
             <div className="square">
                 <div className="square_alinhado">
                     <i className="icons_skills fa-brands fa-bootstrap" style={{color: "#8511FA"}}></i>
-                    
+                    <p>Bootstrap</p>
                 </div>
             </div>
         </div>

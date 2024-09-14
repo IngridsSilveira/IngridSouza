@@ -3,31 +3,14 @@
 
 .footer {
   @include mixins.flex-center;
-  justify-content: space-around !important;
-  padding: 20px;
+  padding: 10px;
   font-family: variables.$font-poppins;
   .footer_copy h4, a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: variables.$white-color;
     text-decoration: none;
     &:hover {
-      font-size: 1rem;
+      font-size: .7rem;
     }
-  }
-  .icons_first {
-    font-size: 1.5rem;
-    margin-left: 10px;
-  }
-  .bi-instagram {
-    color: variables.$instagram-color;
-  }
-  .bi-linkedin {
-    color: variables.$linkedin-color;
-  }
-  .bi-github {
-    color: variables.$white-color;
-  }
-  .bi-whatsapp {
-    color: variables.$whatsapp-color;
   }
 }

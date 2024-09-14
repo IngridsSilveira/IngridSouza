@@ -4,10 +4,9 @@
 .projects {
   @include mixins.flex-center;
   flex-direction: column;
-  width: 100%;
 }
 .carousel-control-next, .carousel-control-prev {
-  height: 90%;
+  height: 85%;
 }
 .carousel-div {
   display: flex !important;
@@ -61,6 +60,9 @@
 }
 
 @media screen and (min-width: 0) {
+  .projects {
+    width: 100%;
+  }
   .carousel-div {
     width: 100%;
     .img-carousel {
@@ -70,6 +72,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .projects {
+    width: 70%;
+  }
   .carousel-div {
     .img-carousel {
       height: 50%;

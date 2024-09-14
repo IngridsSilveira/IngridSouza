@@ -11,6 +11,7 @@
     color: variables.$white-color;
     font-weight: 100;
     font-size: 1rem;
+    margin-left: 15px;
     margin-bottom: 20px;
     margin-top: 8px;
   }
@@ -24,7 +25,7 @@
       .input {
         border: 2px solid;
         border-radius: 3px;
-        margin: 15px 0;
+        margin: 10px 0;
         height: 40px;
         width: 100%;
         &:hover {
@@ -46,14 +47,14 @@
 @media screen and (min-width: 0) {
   .fSection {
     .form {
-      width: 50%;
+      width: 90%;
     }
   }
 }
 @media screen and (min-width: 768px) {
   .fSection {
     .form {
-      width: 50%;
+      width: 80%;
     }
   }
 }

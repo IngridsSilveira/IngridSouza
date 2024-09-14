@@ -4,56 +4,55 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
 } from "reactstrap";
 
 const items = [
   {
-    src: "/images/projetos/blog.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/blog',
-    hrefDemo: 'https://ingridssilveira.github.io/blog/',
-    altText: "Blog about korean dramas",
+    src: "/images/projetos/calculoRescisao.png",
+    hrefGithub: "https://github.com/IngridsSilveira/CalculoRescisao",
+    hrefDemo: "https://ingridssilveira.github.io/CalculoRescisao/",
+    altText: "Calculadora de rescisão",
     key: 1,
   },
   {
     src: "/images/projetos/star.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/starWars-Planets',
-    hrefDemo: 'https://ingridssilveira.github.io/starWars-Planets/',
+    hrefGithub: "https://github.com/IngridsSilveira/starWars-Planets",
+    hrefDemo: "https://ingridssilveira.github.io/starWars-Planets/",
     altText: "Consuming API about Star Wars Planets",
     key: 2,
   },
   {
     src: "/images/projetos/alura.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/AluraGeek',
-    hrefDemo: 'https://ingridssilveira.github.io/AluraGeek/',
+    hrefGithub: "https://github.com/IngridsSilveira/AluraGeek",
+    hrefDemo: "https://ingridssilveira.github.io/AluraGeek/",
     altText: "E-commerce Alura Geek",
     key: 3,
   },
   {
-    src: "/images/projetos/lp.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/LandingPage01',
-    hrefDemo: 'https://ingridssilveira.github.io/LandingPage01/',
-    altText: "Landing Page E-mail",
+    src: "/images/projetos/blog.webp",
+    hrefGithub: "https://github.com/IngridsSilveira/blog",
+    hrefDemo: "https://ingridssilveira.github.io/blog/",
+    altText: "Blog about doramas",
     key: 4,
   },
   {
     src: "/images/projetos/animes.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/Lista_Animes',
-    hrefDemo: 'https://ingridssilveira.github.io/Lista_Animes/',
+    hrefGithub: "https://github.com/IngridsSilveira/Lista_Animes",
+    hrefDemo: "https://ingridssilveira.github.io/Lista_Animes/",
     altText: "CRUD with animes list",
     key: 5,
   },
   {
     src: "/images/projetos/login.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/loginSite',
-    hrefDemo: 'https://ingridssilveira.github.io/loginSite/',
+    hrefGithub: "https://github.com/IngridsSilveira/loginSite",
+    hrefDemo: "https://ingridssilveira.github.io/loginSite/",
     altText: "Login page with validation",
     key: 6,
   },
   {
     src: "/images/projetos/pet.webp",
-    hrefGithub: 'https://github.com/IngridsSilveira/petInfo',
-    hrefDemo: 'https://ingridssilveira.github.io/petInfo/',
+    hrefGithub: "https://github.com/IngridsSilveira/petInfo",
+    hrefDemo: "https://ingridssilveira.github.io/petInfo/",
     altText: "Landing Page with information about pets",
     key: 7,
   },
@@ -73,11 +72,6 @@ export default function Projects(args) {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
-  };
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
   };
 
   const slides = items.map((item) => {
@@ -102,7 +96,7 @@ export default function Projects(args) {
               className="btn btn-success"
               href={item.hrefGithub}
               aria-label="view repository"
-              target='_blank'
+              target="_blank"
               rel="noreferrer"
             >
               Repositório
@@ -111,7 +105,7 @@ export default function Projects(args) {
               className="btn btn-success"
               href={item.hrefDemo}
               aria-label="view demo"
-              target='_blank'
+              target="_blank"
               rel="noreferrer"
             >
               Demo
@@ -136,11 +130,6 @@ export default function Projects(args) {
         {...args}
         className="hidden"
       >
-        <CarouselIndicators
-          items={items}
-          activeIndex={activeIndex}
-          onClickHandler={goToIndex}
-        />
         {slides}
         <CarouselControl
           direction="prev"

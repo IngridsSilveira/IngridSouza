@@ -1,3 +1,4 @@
+//FUNÇÃO PARA LOADING
 export default function Loading() {
   const observar = new IntersectionObserver((entradas) => {
     entradas.forEach((entrada) => {
