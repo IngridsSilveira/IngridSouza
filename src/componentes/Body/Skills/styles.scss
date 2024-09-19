@@ -140,12 +140,12 @@
     margin-top: 0;
   }
   .skills .skills_square {
-    width: 450px;
+    width: 380px;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     .square {
-      margin: 20px;
+      margin: 15px;
     }
   }
 }
@@ -156,7 +156,7 @@
   .skills .skills_square {
     width: 100%;
     .square {
-      margin: 5px;
+      margin: 0;
     }
   }
 }
