@@ -1,20 +1,14 @@
-import Header from '../Header'
-import Preloader from '../Preloader';
-import SectionSkills from '../Body/Skills'
-import Projects from '../Body/Projects';
-import Contacts from '../Body/Contacts';
-import Footer from '../Footer';
+import {LanguageProvider, Header, BackgroundImage, Skills, Projects, Footer, ScrollToTop } from "../index";
 
 export default function App() {
   return (
-    <>
-    
-      <Header />
-      <Preloader />
-      <SectionSkills />
-      <Projects />
-      <Contacts />
-      <Footer />
-    </>
+      <LanguageProvider>
+        <Header />
+        <BackgroundImage />
+        <Skills />
+        <Projects />
+        <Footer />
+        <ScrollToTop/>
+      </LanguageProvider>
   );
 }

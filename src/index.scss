@@ -1,35 +1,12 @@
 @charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: none;
   transition: ease-in-out 1s;
-}
-h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-}
-.bg-div {
-  width: 100%;
-  background-color: #e6e6e6;
-  color: #f4f4f4;
-}
-.btn {
-  background-color: #2cadad !important;
-}
-.hidden {
-  opacity: 0;
-  filter: blur(3px);
-  transform: translateY(50%);
-  transition: all ease-out 1.3s;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
 }
