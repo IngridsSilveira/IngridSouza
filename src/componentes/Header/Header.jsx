@@ -19,11 +19,15 @@ export const Header = () => {
     <header className="bg-black text-white h-16 w-full flex items-center justify-between p-3 font-poppins">
       {/* Menu de Navegação */}
       {isOpen && (
-        <div className="absolute top-14 left-0 bg-black w-full text-white rounded-md shadow-md z-10 md:hidden">
+        <div
+          className="absolute top-14 left-0 bg-black w-full text-white rounded-md shadow-md z-10 md:hidden"
+          role="menu"
+        >
           <nav className="flex flex-col">
             {menuItems.map((menuItem) => (
               <button
                 key={menuItem}
+                role="menuitem"
                 className={`${
                   selectedMenu === menuItem
                     ? "bg-primary-color text-white shadow-lg transition duration-300 px-4 py-2 rounded"
@@ -46,10 +50,14 @@ export const Header = () => {
       )}
 
       {/* Menu visível em telas maiores */}
-      <nav className="hidden md:flex md:items-center md:justify-center md:gap-2">
+      <nav
+        className="hidden md:flex md:items-center md:justify-center md:gap-2"
+        aria-label="Menu Principal"
+      >
         {menuItems.map((menuItem) => (
           <div key={menuItem} className="font-poppins">
             <button
+              role="menuitem"
               className={`${
                 selectedMenu === menuItem
                   ? "bg-white text-black shadow-lg transition duration-300 px-2 py-2 rounded"
@@ -70,14 +78,13 @@ export const Header = () => {
         ))}
       </nav>
 
-
       {/* botão mudar cor e idioma */}
       <div className="flex gap-3">
         <ThemeMode />
         <button
           id="btn-en"
           className="text-white"
-          aria-label="button mudar linguagem"
+          aria-label="Mudar linguagem"
           onClick={toggleLanguage}
         >
           <FaLanguage size={30} />
@@ -87,7 +94,9 @@ export const Header = () => {
       <button
         className="md:hidden flex items-center"
         onClick={toggleMenu}
-        aria-label="Toggle Menu"
+        aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+        aria-expanded={isOpen}
+        aria-controls="menu"
       >
         {isOpen ? (
           <MdClose size={30} />
@@ -95,7 +104,6 @@ export const Header = () => {
           <TbMenuDeep size={35} className="text-white" />
         )}
       </button>
-
     </header>
   );
 };

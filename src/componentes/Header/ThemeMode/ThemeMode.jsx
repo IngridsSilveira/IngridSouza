@@ -20,7 +20,10 @@ export const ThemeMode = () => {
   }, [theme]);
 
   return (
-    <button className="flex gap-1 items-center justify-center" onClick={changeTheme}>
+    <button className="flex gap-1 items-center justify-center"
+    onClick={changeTheme}
+    aria-label={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
+    >
       {theme === "light" && <MdOutlineLightMode size={30} className="text-white"/>}
       {theme === "dark" && <MdDarkMode size={30} className="text-white"/>}
     </button>

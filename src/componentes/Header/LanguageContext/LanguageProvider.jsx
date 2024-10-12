@@ -4,12 +4,16 @@ import { createContext, useState, useContext } from "react";
 const texts = {
   en: {
     profission: "Web Developer",
+    about: "About Me",
+    ingrid: "Hi! I'm Ingrid, a web developer passionate about creating modern and functional digital experiences. I enjoy solving complex problems and learning new technologies. Currently, I'm focused on projects with React, TypeScript and Tailwind CSS, but I'm always looking to explore other tools and frameworks.",
+    btnLookProjetcs: "Look my Projects",
     aboutMe:
       "Specialized in creating modern and responsive digital experiences, with a focus on performance and usability.",
    contact:
       "Contact me",
     linguagem: "Languages",
     ferramentas: "Tools",
+    myProjects: "My Projects",
     projects: {
       lions: "Landing page for a car dealership, focused on SEO, responsiveness, and accessibility.",
       form: "Real-time form validation with API integration for data validation.",
@@ -21,12 +25,16 @@ const texts = {
   },
   pt: {
     profission: "Desenvolvedora web",
+    about: "Sobre Mim",
+    ingrid: "Olá! Eu sou Ingrid, uma desenvolvedora web apaixonada por criar experiências digitais modernas e funcionais. Gosto de resolver problemas complexos e aprender novas tecnologias. Atualmente, estou focada em projetos com React, TypeScript e Tailwind CSS, mas sempre busco explorar outras ferramentas e frameworks.",
     aboutMe:
       "Especializada em criar experiências digitais modernas e responsivas, com um foco em desempenho e usabilidade.",
+      btnLookProjetcs: "Veja meus Projetos",
    contact:
       "Entre em Contato",
     linguagem: "Linguagens",
     ferramentas: "Ferramentas",
+    myProjects: "Meus Projetos",
     projects: {
       lions: "Landing page para uma concessionária de seminovos, com foco em SEO, responsividade e acessibilidade.",
       form: "Validação de formulários em tempo real com integração de API para validação de dados.",

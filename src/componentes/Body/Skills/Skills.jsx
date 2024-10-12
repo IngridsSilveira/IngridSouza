@@ -4,7 +4,6 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaGit, FaNpm, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiCanva, SiTailwindcss } from "react-icons/si";
-
 import { useLanguage } from "../../index";
 
 // Reusable Card Component
@@ -31,30 +30,47 @@ const SkillCard = ({ title, skills }) => {
 export const Skills = () => {
   const { language, texts } = useLanguage();
 
-  const languages = [
-    { IconComponent: TiHtml5, color: "text-palete-orange", size: 65 },
-    { IconComponent: IoLogoCss3, color: "text-linkedin-color", size: 55 },
-    { IconComponent: RiJavascriptFill, color: "text-yellow-500", size: 60 },
-    { IconComponent: BiLogoTypescript, color: "text-linkedin-color", size: 60 },
-  ];
-
-  const frameworks = [
-    { IconComponent: FaReact, color: "text-linkedin-color", size: 65 },
-    { IconComponent: SiTailwindcss, color: "text-blue-600", size: 55 },
-    { IconComponent: FaBootstrap, color: "text-purple-600", size: 60 },
-  ];
-
-  const tools = [
-    { IconComponent: FaGit, color: "", size: 50 },
-    { IconComponent: FaNpm, color: "text-red-600", size: 50 },
-    { IconComponent: SiCanva, color: "text-purple-600", size: 55 },
+  // Skill Data Object
+  const skillData = [
+    {
+      title: texts[language].linguagem,
+      skills: [
+        { IconComponent: TiHtml5, color: "text-palete-orange", size: 65 },
+        { IconComponent: IoLogoCss3, color: "text-linkedin-color", size: 55 },
+        { IconComponent: RiJavascriptFill, color: "text-yellow-500", size: 60 },
+        {
+          IconComponent: BiLogoTypescript,
+          color: "text-linkedin-color",
+          size: 60,
+        },
+      ],
+    },
+    {
+      title: "Frameworks",
+      skills: [
+        { IconComponent: FaReact, color: "text-linkedin-color", size: 65 },
+        { IconComponent: SiTailwindcss, color: "text-blue-600", size: 55 },
+        { IconComponent: FaBootstrap, color: "text-purple-600", size: 60 },
+      ],
+    },
+    {
+      title: texts[language].ferramentas,
+      skills: [
+        { IconComponent: FaGit, color: "", size: 50 },
+        { IconComponent: FaNpm, color: "text-red-600", size: 50 },
+        { IconComponent: SiCanva, color: "text-purple-600", size: 55 },
+      ],
+    },
   ];
 
   return (
-    <section className="container-fluid h-screen md:h-60 flex flex-col md:flex-row gap-4 items-center justify-center text-black dark:bg-slate-100">
-      <SkillCard title={texts[language].linguagem} skills={languages} />
-      <SkillCard title="Frameworks" skills={frameworks} />
-      <SkillCard title={texts[language].ferramentas} skills={tools} />
+    <section
+      data-aos="fade-left"
+      className="container-fluid h-screen md:h-60 flex flex-col md:flex-row gap-4 items-center justify-center text-black dark:bg-slate-100"
+    >
+      {skillData.map(({ title, skills }, index) => (
+        <SkillCard key={index} title={title} skills={skills} />
+      ))}
     </section>
   );
 };

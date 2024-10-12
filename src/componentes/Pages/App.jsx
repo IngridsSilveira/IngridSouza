@@ -1,14 +1,35 @@
-import {LanguageProvider, Header, BackgroundImage, Skills, Projects, Footer, ScrollToTop } from "../index";
+import {
+  LanguageProvider,
+  Header,
+  BackgroundImage,
+  AboutMe,
+  Skills,
+  Projects,
+  Footer,
+  ScrollToTop,
+} from "../index";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  }, []);
+  
   return (
-      <LanguageProvider>
-        <Header />
-        <BackgroundImage />
-        <Skills />
-        <Projects />
-        <Footer />
-        <ScrollToTop/>
-      </LanguageProvider>
+    <LanguageProvider>
+      <Header />
+      <BackgroundImage />
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Footer />
+      <ScrollToTop />
+    </LanguageProvider>
   );
 }

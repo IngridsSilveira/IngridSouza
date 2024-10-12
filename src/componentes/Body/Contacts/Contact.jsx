@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../../index";
 import emailjs from "@emailjs/browser";
+import { RiSendPlaneFill } from "react-icons/ri";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -56,13 +57,18 @@ export const Contact = () => {
   };
 
   return (
-    <section id="Contact" className="bg-slate-200 p-6 rounded-lg shadow-lg w-full md:w-80">
-      <p className="text-lg md:text-xl text-center font-rubik mb-4 text-black">
-      {texts[language].contact}
+    <section
+      id="Contact"
+      className="bg-slate-200 p-6 rounded-lg shadow-md shadow-slate-700"
+      aria-labelledby="contact-heading"
+    >
+      <p className="text-lg md:text-xl text-center font-rubik mb-4 text-black"
+      id="contact-heading">
+        {texts[language].contact}
       </p>
 
       <form onSubmit={sendEmail}>
-        <fieldset className="flex flex-col gap-4">
+        <fieldset className="flex flex-col gap-4 ">
           {/* Campo Nome */}
           <div>
             <label className="text-sm text-black font-bold" htmlFor="name">
@@ -131,9 +137,10 @@ export const Contact = () => {
           {/* Botão de Enviar */}
           <button
             type="submit"
-            className="w-full py-2 mt-2 rounded-md bg-green-600 hover:bg-green-700 text-white font-semibold shadow-lg"
+            className="rounded-md py-1 w-full flex items-center justify-center text-4xl transition-all hover:bg-blue-400"
+            aria-label="Enviar mensagem"
           >
-            Enviar
+            <RiSendPlaneFill className="text-blue-600" />
           </button>
         </fieldset>
       </form>
