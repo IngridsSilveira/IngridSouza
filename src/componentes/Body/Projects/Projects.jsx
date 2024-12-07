@@ -11,6 +11,7 @@ export const Projects = () => {
       name: "Lions Seminovos",
       src: "https://imgur.com/rt7d0vc.jpg",
       hrefGithub: "https://github.com/IngridsSilveira/lions-seminovos",
+      hrefDemo: "https://ingridssilveira.github.io/lions-seminovos/",
       description:
         texts[language]?.projects?.lions || "Descrição não disponível", // Use o texto baseado na linguagem
       key: 4,
@@ -19,6 +20,7 @@ export const Projects = () => {
       name: "Formulário com API",
       src: "https://imgur.com/vn15beG.jpg",
       hrefGithub: "https://github.com/IngridsSilveira/form-validation",
+      hrefDemo: "https://ingridssilveira.github.io/form-validation/",
       description:
         texts[language]?.projects?.form || "Descrição não disponível",
       key: 5,
@@ -27,6 +29,7 @@ export const Projects = () => {
       name: "Países API",
       src: "https://imgur.com/6BE9qEx.jpg",
       hrefGithub: "https://github.com/IngridsSilveira/countries-page",
+      hrefDemo: "https://ingridssilveira.github.io/countries-page/",
       description:
         texts[language]?.projects?.countries || "Descrição não disponível",
       key: 6,
