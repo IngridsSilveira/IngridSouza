@@ -5,14 +5,14 @@ const texts = {
   en: {
     profission: "IT Girl",
     about: "About Me",
-    ingrid: "Hi! I'm Ingrid, a web developer passionate about creating modern and functional digital experiences. I enjoy solving complex problems and learning new technologies. Currently, I'm focused on projects with React, TypeScript and Tailwind CSS, but I'm always looking to explore other tools and frameworks.",
+    ingrid: "I'm Ingrid, a digital creator with a passion for technology and visual communication. I work as both a web developer and a video editor, combining creativity with functional solutions. I have experience in HTML, CSS, JavaScript, React and editing tools such as CapCut and Canva.",
     btnLookProjetcs: "Look my Projects",
     aboutMe:
-      "Specialized in creating modern and responsive digital experiences.",
+      "Specialized in creating digital experiences, follow me on my social networks:",
    contact:
       "Contact me",
-    programing: "Programming",
-    edicao: "Tools",
+    programing: "💻 Programming",
+    edicao: "🎬 Editing",
     myProjects: "My Projects",
     projects: {
       lions: "Landing page for a car dealership, focused on SEO, responsiveness, and accessibility.",
@@ -26,14 +26,14 @@ const texts = {
   pt: {
     profission: "Garota do Ti",
     about: "Sobre Mim",
-    ingrid: "Olá! Eu sou Ingrid, uma desenvolvedora web apaixonada por criar experiências digitais modernas e funcionais. Gosto de resolver problemas complexos e aprender novas tecnologias. Atualmente, estou focada em projetos com React, TypeScript e Tailwind CSS, mas sempre busco explorar outras ferramentas e frameworks.",
+    ingrid: "Sou Ingrid, uma criadora digital com paixão por tecnologia e comunicação visual. Atuo tanto como desenvolvedora web quanto como editora de vídeos, unindo criatividade com soluções funcionais. Tenho experiência em HTML, CSS, JavaScript, React e ferramentas de edição como CapCut e Canva.",
     aboutMe:
-      "Especializada em criar experiências digitais.",
+      "Especializada em criar experiências digitais, me siga nas minhas rede sociais:",
       btnLookProjetcs: "Veja meus Projetos",
    contact:
       "Entre em Contato",
-    programing: "Programação",
-    edicao: "Ferramentas",
+    programing: "💻 Programação",
+    edicao: "🎬 Edição",
     myProjects: "Meus Projetos",
     projects: {
       lions: "Landing page para uma concessionária de seminovos, com foco em SEO, responsividade e acessibilidade.",
