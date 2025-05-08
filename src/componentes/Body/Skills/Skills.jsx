@@ -2,7 +2,7 @@ import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaGit, FaNpm, FaReact, FaBootstrap } from "react-icons/fa";
+import { FaReact, FaBootstrap } from "react-icons/fa";
 import { SiCanva, SiTailwindcss } from "react-icons/si";
 import { useLanguage } from "../../index";
 
@@ -33,7 +33,7 @@ export const Skills = () => {
   // Skill Data Object
   const skillData = [
     {
-      title: texts[language].linguagem,
+      title: texts[language].programing,
       skills: [
         { IconComponent: TiHtml5, color: "text-palete-orange", size: 65 },
         { IconComponent: IoLogoCss3, color: "text-linkedin-color", size: 55 },
@@ -54,11 +54,10 @@ export const Skills = () => {
       ],
     },
     {
-      title: texts[language].ferramentas,
+      title: texts[language].edicao,
       skills: [
-        { IconComponent: FaGit, color: "", size: 50 },
-        { IconComponent: FaNpm, color: "text-red-600", size: 50 },
         { IconComponent: SiCanva, color: "text-purple-600", size: 55 },
+        { IconComponent: "SiCanva", color: "text-purple-600", size: 55 },
       ],
     },
   ];

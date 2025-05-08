@@ -1,5 +1,5 @@
-import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
-import { PiReadCvLogoFill } from "react-icons/pi";
+import { FaLinkedin, FaGithub, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 import { useLanguage } from "../../index";
 
 export const BackgroundImage = () => {
@@ -43,7 +43,7 @@ export const BackgroundImage = () => {
           >
             <FaLinkedin
               size={40}
-              className="text-linkedin-color hover:translate-y-2 hover:text-blue-700"
+              className="text-linkedin-color hover:translate-y-2"
             />
           </a>
           <a
@@ -54,7 +54,7 @@ export const BackgroundImage = () => {
           >
             <FaGithub
               size={40}
-              className="dark:text-black hover:translate-y-2"
+              className="dark:text-black hover:translate-y-2 hover:text-white"
             />
           </a>
           <a
@@ -65,18 +65,29 @@ export const BackgroundImage = () => {
           >
             <FaWhatsapp
               size={40}
-              className="text-whatsapp-color hover:translate-y-2 hover:text-green-700"
+              className="text-whatsapp-color hover:translate-y-2"
             />
           </a>
           <a
-            href="https://docs.google.com/document/d/1K2waePJbltmot6mHhPIowOVboaE_zA7YGXcuTHohUEY/edit?tab=t.0"
-            aria-label={`Link para o Currículo de Ingrid S. Silveira`}
+            href="https://www.youtube.com/@tsuki8564"
+            aria-label={`Link para o youtube de Ingrid S. Silveira`}
             target="_blank"
             rel="noreferrer"
           >
-            <PiReadCvLogoFill
+            <FaYoutube
               size={40}
-              className="dark:text-black hover:translate-y-2 hover:text-gray-400"
+              className="text-red-600 hover:translate-y-2"
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@tsukiidx"
+            aria-label={`Link para o tiktok de Ingrid S. Silveira`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillTikTok
+              size={40}
+              className="dark:text-black hover:translate-y-2 hover:text-white"
             />
           </a>
         </div>
