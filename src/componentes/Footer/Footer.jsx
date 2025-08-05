@@ -28,6 +28,7 @@ export const Footer = () => {
                 />
               </a>
             </h4>
+            <h4 className="font-poppins text-sm flex gap-2 items-center justify-center dark:text-black">Vamos tirar sua ideia do papel? Entre em contato.</h4>
           </div>
         </div>
         {/* Texto Final */}

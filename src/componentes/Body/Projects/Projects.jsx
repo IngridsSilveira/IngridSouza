@@ -110,7 +110,7 @@ export const Projects = () => {
                 {item.hrefDemo ? (
                   <a
                     href={item.hrefDemo}
-                    className="bg-blue-600 text-white px-4 py-2 rounded-md transition-all hover:bg-blue-700"
+                    className="bg-green-600 text-white px-4 py-2 rounded-md transition-all hover:bg-green-700"
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`Ver demo do projeto ${item.name}`}
@@ -127,7 +127,7 @@ export const Projects = () => {
                 )}
                 <a
                   href={item.hrefGithub}
-                  className="bg-gray-900 text-white px-4 py-2 rounded-md transition-all hover:bg-gray-800"
+                  className="bg-gray-900 text-white px-4 py-2 rounded-md transition-all hover:bg-gray-700"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -145,7 +145,7 @@ export const Projects = () => {
         </span>
         <button
           onClick={handleNextPage}
-          className="bg-blue-600 rounded-md px-3 text-3xl transition-all hover:bg-blue-700"
+          className="bg-green-600 rounded-md px-3 text-3xl transition-all hover:bg-green-700"
         >
           <GrFormNextLink className="text-white" />
         </button>

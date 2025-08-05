@@ -26,8 +26,8 @@ export default function App() {
       <Header />
       <BackgroundImage />
       <AboutMe />
-      <Skills />
       <Projects />
+      <Skills />
       <Footer />
       <ScrollToTop />
     </LanguageProvider>

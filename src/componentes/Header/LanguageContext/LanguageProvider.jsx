@@ -8,11 +8,9 @@ const texts = {
     ingrid: "I'm Ingrid, a digital creator with a passion for technology and visual communication. I work as both a web developer and a video editor, combining creativity with functional solutions. I have experience in HTML, CSS, JavaScript, React and editing tools such as CapCut and Canva.",
     btnLookProjetcs: "Look my Projects",
     aboutMe:
-      "Specialized in creating digital experiences, follow me on my social networks:",
+      "Website development and video editing for small businesses looking to grow online!",
    contact:
       "Contact me",
-    programing: "💻 Programming",
-    edicao: "🎬 Editing",
     myProjects: "My Projects",
     projects: {
       lions: "Landing page for a car dealership, focused on SEO, responsiveness, and accessibility.",
@@ -28,12 +26,10 @@ const texts = {
     about: "Sobre Mim",
     ingrid: "Sou Ingrid, uma criadora digital com paixão por tecnologia e comunicação visual. Atuo tanto como desenvolvedora web quanto como editora de vídeos, unindo criatividade com soluções funcionais. Tenho experiência em HTML, CSS, JavaScript, React e ferramentas de edição como CapCut e Canva.",
     aboutMe:
-      "Especializada em criar experiências digitais, me siga nas minhas rede sociais:",
+      "Desenvolvimento de sites e edição de vídeos para pequenos negócios que querem crescer online!",
       btnLookProjetcs: "Veja meus Projetos",
    contact:
       "Entre em Contato",
-    programing: "💻 Programação",
-    edicao: "🎬 Edição",
     myProjects: "Meus Projetos",
     projects: {
       lions: "Landing page para uma concessionária de seminovos, com foco em SEO, responsividade e acessibilidade.",

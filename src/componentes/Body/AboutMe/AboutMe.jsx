@@ -19,15 +19,6 @@ export const AboutMe = () => {
         <p className="text-lg leading-relaxed mb-6 dark:text-gray-800 font-poppins">
           {texts[language].ingrid}
         </p>
-        <div className="mt-8">
-          <a
-            href="#Projects"
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-colors"
-            aria-label={texts[language].btnLookProjetcs}
-          >
-            {texts[language].btnLookProjetcs}
-          </a>
-        </div>
       </div>
     </section>
   );
