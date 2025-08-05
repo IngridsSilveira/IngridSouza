@@ -69,7 +69,7 @@ export const BackgroundImage = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/@tsuki8564"
+            href="https://www.youtube.com/@tsuki_editssD"
             aria-label={`Link para o youtube de Ingrid S. Silveira`}
             target="_blank"
             rel="noreferrer"
@@ -80,7 +80,7 @@ export const BackgroundImage = () => {
             />
           </a>
           <a
-            href="https://www.tiktok.com/@tsukiidx"
+            href="https://www.tiktok.com/@tsukidx"
             aria-label={`Link para o tiktok de Ingrid S. Silveira`}
             target="_blank"
             rel="noreferrer"
