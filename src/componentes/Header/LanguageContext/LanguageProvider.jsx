@@ -33,11 +33,11 @@ const texts = {
     myProjects: "Meus Projetos",
     projects: {
       lions: "Landing page para uma concessionária de seminovos, com foco em SEO, responsividade e acessibilidade.",
-      form: "Validação de formulários em tempo real com integração de API para validação de dados.",
+      estetica: "Vídeo curto para redes sociais, mostrando os serviços da clínica com foco em bem-estar, transformação e agendamento por WhatsApp.",
       countries: "Página interativa que consome uma API para listar países com informações básicas, como bandeira e capital.",
-      rescisao: "Aplicação simples para calcular a rescisão trabalhista com base em dados fornecidos pelo usuário.",
+      barbearia: "Vídeo de divulgação para barbearia fictícia, com foco em estilo masculino, atendimento personalizado e cuidados com cabelo e barba.",
       starWars: "Aplicação que consome a API de planetas de Star Wars, exibindo detalhes e características de cada planeta.",
-      ecommerce: "Loja virtual com tema Geek, desenvolvida como projeto prático para aplicar conceitos de e-commerce e responsividade.",
+      confeitaria: "Vídeo curto para loja fictícia de doces artesanais, focando em apelo visual e chamada para encomendas via WhatsApp.",
     }
   }
 };

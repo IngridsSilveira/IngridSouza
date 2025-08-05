@@ -17,14 +17,16 @@ export const Projects = () => {
       key: 4,
     },
     {
-      name: "Formulário com API",
-      src: "https://imgur.com/vn15beG.jpg",
-      hrefGithub: "https://github.com/IngridsSilveira/form-validation",
-      hrefDemo: "https://ingridssilveira.github.io/form-validation/",
+      name: "Doces Artesanais",
+      src: "https://i.imgur.com/epCVoGL.jpeg",
+      hrefGithub: "https://www.instagram.com/tsuki_edita/",
+      hrefDemo:
+        "https://drive.google.com/file/d/1wFYcdlgP_koateqEGLVo_CIsgMk9Uu67/view?usp=drive_link",
       description:
-        texts[language]?.projects?.form || "Descrição não disponível",
-      key: 5,
+        texts[language]?.projects?.confeitaria || "Descrição não disponível",
+      key: 3,
     },
+
     {
       name: "Países API",
       src: "https://imgur.com/6BE9qEx.jpg",
@@ -35,12 +37,13 @@ export const Projects = () => {
       key: 6,
     },
     {
-      name: "Calculadora de Rescisão",
-      src: "https://imgur.com/G1PvfG7.jpg",
-      hrefGithub: "https://github.com/IngridsSilveira/CalculoRescisao",
-      hrefDemo: "https://ingridssilveira.github.io/CalculoRescisao/",
+      name: "Barbearia Moderna",
+      src: "https://i.imgur.com/5c4mavv.jpeg",
+      hrefGithub: "https://www.instagram.com/tsuki_edita/",
+      hrefDemo:
+        "https://drive.google.com/file/d/1qr5aNi0-isJDnDKQj5KKGLm6l60D9mE3/view?usp=drive_link",
       description:
-        texts[language]?.projects?.rescisao || "Descrição não disponível",
+        texts[language]?.projects?.barbearia || "Descrição não disponível",
       key: 1,
     },
     {
@@ -53,13 +56,14 @@ export const Projects = () => {
       key: 2,
     },
     {
-      name: "E-commerce Alura",
-      src: "/images/projetos/alura.webp",
-      hrefGithub: "https://github.com/IngridsSilveira/AluraGeek",
-      hrefDemo: "https://ingridssilveira.github.io/AluraGeek/",
+      name: "Clínica de Estética",
+      src: "https://i.imgur.com/C53emWg.jpeg",
+      hrefGithub: "https://www.instagram.com/tsuki_edita/",
+      hrefDemo:
+        "https://drive.google.com/file/d/1uAoH1ArXsDs-HxdILraa3nH1VwL9T2EL/view?usp=drive_link",
       description:
-        texts[language]?.projects?.ecommerce || "Descrição não disponível",
-      key: 3,
+        texts[language]?.projects?.estetica || "Descrição não disponível",
+      key: 5,
     },
   ];
 
@@ -115,14 +119,14 @@ export const Projects = () => {
                     rel="noreferrer"
                     aria-label={`Ver demo do projeto ${item.name}`}
                   >
-                    Demo
+                    Dar uma olhada
                   </a>
                 ) : (
                   <button
                     className="bg-gray-400 text-white px-4 py-2 rounded-md"
                     disabled
                   >
-                    Demo não disponível
+                    Indisponível
                   </button>
                 )}
                 <a
@@ -131,7 +135,7 @@ export const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub
+                  Minha rede
                 </a>
               </div>
             </div>
