@@ -5,11 +5,8 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact, FaBootstrap } from "react-icons/fa";
 import { SiCanva, SiTailwindcss } from "react-icons/si";
 import capcut from "../../../assets/capcut-stroke-rounded.svg";
-import { useLanguage } from "../../index";
 
 export const Skills = () => {
-  const { language, texts } = useLanguage();
-
   // Unificando todas as skills em um só array
   const allSkills = [
     { IconComponent: TiHtml5, color: "text-palete-orange", size: 55 },
