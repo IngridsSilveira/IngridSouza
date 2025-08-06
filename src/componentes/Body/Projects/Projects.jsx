@@ -47,7 +47,7 @@ export const Projects = () => {
     },
     {
       name: "Landing Page Pet Shop",
-      src: "https://i.imgur.com/RXptAyl.png",
+      src: "https://i.imgur.com/w2wPAyI.png",
       hrefGithub: "https://github.com/IngridsSilveira/pet-shop",
       hrefDemo: "https://ingridssilveira.github.io/pet-shop/",
       description:
