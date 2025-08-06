@@ -9,7 +9,7 @@ export const Projects = () => {
   const items = [
     {
       name: "Lions Seminovos",
-      src: "https://imgur.com/rt7d0vc.jpg",
+      src: "https://i.imgur.com/mv6zNAJ.png",
       hrefGithub: "https://github.com/IngridsSilveira/lions-seminovos",
       hrefDemo: "https://ingridssilveira.github.io/lions-seminovos/",
       description:
@@ -26,10 +26,9 @@ export const Projects = () => {
         texts[language]?.projects?.confeitaria || "Descrição não disponível",
       key: 3,
     },
-
     {
       name: "Landing Page Clínica Estética",
-      src: "https://i.imgur.com/fNgWy5s.png",
+      src: "https://i.imgur.com/rspqHhF.png",
       hrefGithub: "https://github.com/IngridsSilveira/clinica-estetica",
       hrefDemo: "https://ingridssilveira.github.io/clinica-estetica/",
       description:
@@ -48,9 +47,9 @@ export const Projects = () => {
     },
     {
       name: "Landing Page Pet Shop",
-      src: "/images/projetos/star.webp",
-      hrefGithub: "https://github.com/IngridsSilveira/starWars-Planets",
-      hrefDemo: "https://ingridssilveira.github.io/starWars-Planets/",
+      src: "https://i.imgur.com/RXptAyl.png",
+      hrefGithub: "https://github.com/IngridsSilveira/pet-shop",
+      hrefDemo: "https://ingridssilveira.github.io/pet-shop/",
       description:
         texts[language]?.projects?.lpPet || "Descrição não disponível",
       key: 2,
@@ -86,7 +85,7 @@ export const Projects = () => {
     <section
       id="Projects"
       data-aos="fade-right"
-      className="container-fluid mx-auto py-12 px-4 dark:bg-slate-100 text-white"
+      className="container mx-auto py-12 px-4 dark:bg-slate-100 text-white"
     >
       <h2 className="text-center text-3xl font-protest tracking-wider mb-8 dark:text-black">
         {texts[language].myProjects}

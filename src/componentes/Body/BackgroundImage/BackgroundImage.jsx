@@ -74,10 +74,7 @@ export const BackgroundImage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaYoutube
-              size={40}
-              className="text-red-600 hover:translate-y-2"
-            />
+            <FaYoutube size={40} className="text-red-600 hover:translate-y-2" />
           </a>
           <a
             href="https://www.tiktok.com/@tsukidx"

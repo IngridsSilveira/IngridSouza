@@ -15,8 +15,8 @@ module.exports = {
         'palete-pink': '#ca217e',
       },
       backgroundImage: {
-        'black-background': "url('https://imgur.com/8XC5b5f.jpg')",
-        'white-background': "url('https://imgur.com/62EU1bV.jpg')",
+        'black-background': "url('https://i.imgur.com/2las9G4.png')",
+        'white-background': "url('https://i.imgur.com/wacbd1V.png')",
        },
       colors: {
         'dark-bg': '#121212',
