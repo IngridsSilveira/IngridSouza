@@ -28,12 +28,12 @@ export const Projects = () => {
     },
 
     {
-      name: "Países API",
-      src: "https://imgur.com/6BE9qEx.jpg",
-      hrefGithub: "https://github.com/IngridsSilveira/countries-page",
-      hrefDemo: "https://ingridssilveira.github.io/countries-page/",
+      name: "Landing Page Clínica Estética",
+      src: "https://i.imgur.com/fNgWy5s.png",
+      hrefGithub: "https://github.com/IngridsSilveira/clinica-estetica",
+      hrefDemo: "https://ingridssilveira.github.io/clinica-estetica/",
       description:
-        texts[language]?.projects?.countries || "Descrição não disponível",
+        texts[language]?.projects?.lpEstetica || "Descrição não disponível",
       key: 6,
     },
     {
@@ -47,12 +47,12 @@ export const Projects = () => {
       key: 1,
     },
     {
-      name: "Planetas do Star Wars API",
+      name: "Landing Page Pet Shop",
       src: "/images/projetos/star.webp",
       hrefGithub: "https://github.com/IngridsSilveira/starWars-Planets",
       hrefDemo: "https://ingridssilveira.github.io/starWars-Planets/",
       description:
-        texts[language]?.projects?.starWars || "Descrição não disponível",
+        texts[language]?.projects?.lpPet || "Descrição não disponível",
       key: 2,
     },
     {

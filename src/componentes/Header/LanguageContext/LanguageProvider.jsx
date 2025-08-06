@@ -14,11 +14,11 @@ const texts = {
     myProjects: "My Projects",
     projects: {
       lions: "Landing page for a car dealership, focused on SEO, responsiveness, and accessibility.",
-      form: "Real-time form validation with API integration for data validation.",
-      countries: "Interactive page that consumes an API to list countries with basic information such as flag and capital.",
+       estetica: "Short video for social media, showcasing the clinic's services, focusing on well-being, transformation, and scheduling via WhatsApp.",
+      lpEstetica: "Landing page for a beauty clinic, focusing on SEO, responsiveness, and customer engagement.",
       rescisao: "Simple app to calculate termination of employment based on user input.",
-      starWars: "Application that consumes the Star Wars planets API, displaying details and characteristics of each planet.",
-      ecommerce: "Geek-themed virtual store developed as a practical project to apply e-commerce and responsiveness concepts.",
+      lpPet: "Landing page about a pet shop, focusing on SEO, responsiveness, and customer appeal.",
+      confeitaria: "Short video for a fictional artisanal candy store, focusing on visual appeal and calling for orders via WhatsApp.",
     }
   },
   pt: {
@@ -34,9 +34,9 @@ const texts = {
     projects: {
       lions: "Landing page para uma concessionária de seminovos, com foco em SEO, responsividade e acessibilidade.",
       estetica: "Vídeo curto para redes sociais, mostrando os serviços da clínica com foco em bem-estar, transformação e agendamento por WhatsApp.",
-      countries: "Página interativa que consome uma API para listar países com informações básicas, como bandeira e capital.",
+      lpEstetica: "Landing Page sobre uma clínica estética, com foco em SEO, responsividade e atratividade de clientes.",
       barbearia: "Vídeo de divulgação para barbearia fictícia, com foco em estilo masculino, atendimento personalizado e cuidados com cabelo e barba.",
-      starWars: "Aplicação que consome a API de planetas de Star Wars, exibindo detalhes e características de cada planeta.",
+      lpPet: "Landing Page sobre uma pet shop, com foco em SEO, responsividade e atratividade de clientes.",
       confeitaria: "Vídeo curto para loja fictícia de doces artesanais, focando em apelo visual e chamada para encomendas via WhatsApp.",
     }
   }
