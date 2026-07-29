@@ -1,157 +1,142 @@
 import { useLanguage } from "../../index";
 import { useState } from "react";
-import { GrFormNextLink } from "react-icons/gr";
+import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { getProjectsData } from "./projectsData";
 
 export const Projects = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const { language, texts } = useLanguage();
 
-  const items = [
-    {
-      name: "Lions Seminovos",
-      src: "https://i.imgur.com/mv6zNAJ.png",
-      hrefGithub: "https://github.com/IngridsSilveira/lions-seminovos",
-      hrefDemo: "https://ingridssilveira.github.io/lions-seminovos/",
-      description:
-        texts[language]?.projects?.lions || "Descrição não disponível", // Use o texto baseado na linguagem
-      key: 4,
-    },
-    {
-      name: "Doces Artesanais",
-      src: "https://i.imgur.com/epCVoGL.jpeg",
-      hrefGithub: "https://www.instagram.com/tsuki_edita/",
-      hrefDemo:
-        "https://drive.google.com/file/d/1wFYcdlgP_koateqEGLVo_CIsgMk9Uu67/view?usp=drive_link",
-      description:
-        texts[language]?.projects?.confeitaria || "Descrição não disponível",
-      key: 3,
-    },
-    {
-      name: "Landing Page Clínica Estética",
-      src: "https://i.imgur.com/rspqHhF.png",
-      hrefGithub: "https://github.com/IngridsSilveira/clinica-estetica",
-      hrefDemo: "https://ingridssilveira.github.io/clinica-estetica/",
-      description:
-        texts[language]?.projects?.lpEstetica || "Descrição não disponível",
-      key: 6,
-    },
-    {
-      name: "Barbearia Moderna",
-      src: "https://i.imgur.com/5c4mavv.jpeg",
-      hrefGithub: "https://www.instagram.com/tsuki_edita/",
-      hrefDemo:
-        "https://drive.google.com/file/d/1qr5aNi0-isJDnDKQj5KKGLm6l60D9mE3/view?usp=drive_link",
-      description:
-        texts[language]?.projects?.barbearia || "Descrição não disponível",
-      key: 1,
-    },
-    {
-      name: "Landing Page Pet Shop",
-      src: "https://i.imgur.com/w2wPAyI.png",
-      hrefGithub: "https://github.com/IngridsSilveira/pet-shop",
-      hrefDemo: "https://ingridssilveira.github.io/pet-shop/",
-      description:
-        texts[language]?.projects?.lpPet || "Descrição não disponível",
-      key: 2,
-    },
-    {
-      name: "Clínica de Estética",
-      src: "https://i.imgur.com/C53emWg.jpeg",
-      hrefGithub: "https://www.instagram.com/tsuki_edita/",
-      hrefDemo:
-        "https://drive.google.com/file/d/1uAoH1ArXsDs-HxdILraa3nH1VwL9T2EL/view?usp=drive_link",
-      description:
-        texts[language]?.projects?.estetica || "Descrição não disponível",
-      key: 5,
-    },
-  ];
+  const items = getProjectsData(texts, language);
 
-  const itemsPorPaginas = 2;
-  const totalPaginas = Math.ceil(items.length / itemsPorPaginas);
+  const itemsPorPagina = 2;
+  const totalPaginas = Math.ceil(items.length / itemsPorPagina);
 
-  //itens da página atual
   const currentItems = items.slice(
-    currentPage * itemsPorPaginas,
-    currentPage * itemsPorPaginas + itemsPorPaginas
+    currentPage * itemsPorPagina,
+    currentPage * itemsPorPagina + itemsPorPagina
   );
 
   const handleNextPage = () => {
-    setCurrentPage((prevPage) =>
-      prevPage + 1 < totalPaginas ? prevPage + 1 : 0
-    ); //volta ao chegar no final
+    setCurrentPage((prev) => (prev + 1 < totalPaginas ? prev + 1 : 0));
   };
+
+  const handlePrevPage = () => {
+    setCurrentPage((prev) => (prev - 1 >= 0 ? prev - 1 : totalPaginas - 1));
+  };
+
+  const currentTexts = texts[language] || {};
 
   return (
     <section
       id="Projects"
       data-aos="fade-right"
-      className="container mx-auto py-12 px-4 dark:bg-slate-100 text-white"
+      className="w-full py-16 px-4 md:px-8 bg-zinc-950 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 transition-colors"
     >
-      <h2 className="text-center text-3xl font-protest tracking-wider mb-8 dark:text-black">
-        {texts[language].myProjects}
-      </h2>
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-center text-3xl md:text-4xl font-bold tracking-tight mb-12 text-zinc-100 dark:text-zinc-900 transition-colors">
+          {currentTexts.myProjects || "Meus Projetos"}
+        </h2>
 
-      <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {currentItems.map((item) => (
-          <div
-            key={item.key}
-            className="rounded-lg overflow-hidden transform transition-all duration-500 hover:scale-105 bg-white shadow-md shadow-slate-700"
-          >
-            <img
-              className="w-full h-48 object-cover transition-opacity duration-300 hover:opacity-90"
-              src={item.src}
-              alt={`Imagem do projeto ${item.name}`}
-              onError={(e) => {
-                e.target.onerror = null; // impede loops
-                e.target.src = "/path/to/default/image.jpg"; // imagem padrão
-              }}
-            />
-            <div className="p-4">
-              <h1 className="font-bold text-lg mb-2 text-black">{item.name}</h1>
-              <p className="text-sm text-gray-700 mb-4">{item.description}</p>
-              <div className="flex justify-between">
-                {item.hrefDemo ? (
-                  <a
-                    href={item.hrefDemo}
-                    className="bg-green-600 text-white px-4 py-2 rounded-md transition-all hover:bg-green-700"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Ver demo do projeto ${item.name}`}
-                  >
-                    Dar uma olhada
-                  </a>
-                ) : (
-                  <button
-                    className="bg-gray-400 text-white px-4 py-2 rounded-md"
-                    disabled
-                  >
-                    Indisponível
-                  </button>
-                )}
-                <a
-                  href={item.hrefGithub}
-                  className="bg-gray-900 text-white px-4 py-2 rounded-md transition-all hover:bg-gray-700"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Minha rede
-                </a>
+        <article className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {currentItems.map((item) => {
+            const targetDemo = item.hrefDemo || item.src;
+
+            return (
+              <div
+                key={item.key}
+                className="group relative rounded-2xl overflow-hidden bg-zinc-900/90 dark:bg-zinc-100 border border-zinc-800 dark:border-zinc-300 shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500 transition-all duration-300 flex flex-col justify-between"
+              >
+                {/* Moldura da Imagem */}
+                <div className="w-full h-72 bg-zinc-950/60 dark:bg-zinc-200/60 flex items-center justify-center p-4 relative overflow-hidden border-b border-zinc-800/80 dark:border-zinc-300">
+                  <img
+                    className="max-h-full max-w-full object-contain rounded-lg transform group-hover:scale-105 transition-transform duration-500"
+                    src={item.src}
+                    alt={`Imagem do projeto ${item.name}`}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src =
+                        "https://via.placeholder.com/400x200?text=Projeto";
+                    }}
+                  />
+                </div>
+
+                {/* Informações e Ações */}
+                <div className="p-6 flex flex-col justify-between flex-grow">
+                  <div>
+                    <div className="flex justify-between items-start gap-2 mb-2">
+                      <h3 className="font-bold text-xl text-zinc-100 dark:text-zinc-900 group-hover:text-emerald-400 dark:group-hover:text-emerald-600 transition-colors">
+                        {item.name}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-zinc-400 dark:text-zinc-600 mb-6 line-clamp-3">
+                      {item.description}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3 items-center justify-between pt-4 border-t border-zinc-800 dark:border-zinc-300/80">
+                    <a
+                      href={targetDemo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all shadow-lg shadow-emerald-950/20"
+                      aria-label={`Visualizar projeto ${item.name}`}
+                    >
+                      <span>
+                        {item.hrefDemo
+                          ? currentTexts.btnSeeProject || "Ver Projeto"
+                          : currentTexts.btnSeePrototype || "Ver Protótipo"}
+                      </span>
+                      <FaExternalLinkAlt className="text-xs" />
+                    </a>
+
+                    {item.hrefGithub ? (
+                      <a
+                        href={item.hrefGithub}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 bg-zinc-800 dark:bg-zinc-200 hover:bg-zinc-700 dark:hover:bg-zinc-300 text-zinc-200 dark:text-zinc-800 px-4 py-2 rounded-xl text-sm font-medium transition-all border border-zinc-700 dark:border-zinc-300"
+                      >
+                        <FaGithub className="text-base" />
+                        <span>{currentTexts.btnRepository || "Repositório"}</span>
+                      </a>
+                    ) : (
+                      <span className="text-xs font-mono px-3 py-1.5 rounded-lg bg-zinc-800/60 dark:bg-zinc-200/80 text-zinc-400 dark:text-zinc-700 border border-zinc-700/50 dark:border-zinc-300">
+                        {currentTexts.tagDesign || "UI / UX Design"}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </article>
+            );
+          })}
+        </article>
 
-      <div className="flex justify-between items-center mt-8">
-        <span className="text-sm text-gray-300 dark:text-gray-950">
-          Página {currentPage + 1} de {totalPaginas}
-        </span>
-        <button
-          onClick={handleNextPage}
-          className="bg-green-600 rounded-md px-3 text-3xl transition-all hover:bg-green-700"
-        >
-          <GrFormNextLink className="text-white" />
-        </button>
+        {/* Navegação Moderna */}
+        <div className="flex justify-center items-center gap-6 mt-12">
+          <button
+            onClick={handlePrevPage}
+            className="bg-zinc-800 dark:bg-zinc-100 hover:bg-emerald-600 dark:hover:bg-emerald-500 text-zinc-200 dark:text-zinc-800 hover:text-white dark:hover:text-white p-3 rounded-xl transition-all border border-zinc-700 dark:border-zinc-300 shadow-md active:scale-95"
+            aria-label="Página anterior"
+          >
+            <GrFormPreviousLink className="text-2xl" />
+          </button>
+
+          <span className="text-sm font-mono text-zinc-400 dark:text-zinc-700 bg-zinc-900 dark:bg-zinc-100 px-4 py-2 rounded-xl border border-zinc-800 dark:border-zinc-300">
+            {language === "pt" ? "Página" : "Page"}{" "}
+            <strong className="text-emerald-400 dark:text-emerald-600">{currentPage + 1}</strong>{" "}
+            {language === "pt" ? "de" : "of"} {totalPaginas}
+          </span>
+
+          <button
+            onClick={handleNextPage}
+            className="bg-zinc-800 dark:bg-zinc-100 hover:bg-emerald-600 dark:hover:bg-emerald-500 text-zinc-200 dark:text-zinc-800 hover:text-white dark:hover:text-white p-3 rounded-xl transition-all border border-zinc-700 dark:border-zinc-300 shadow-md active:scale-95"
+            aria-label="Próxima página"
+          >
+            <GrFormNextLink className="text-2xl" />
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,103 @@
+export const getProjectsData = (texts = {}, language = "pt") => {
+    const currentText = texts[language] || {};
+    const projects = currentText.projects || {};
+
+    return [{
+            key: 1,
+            name: "Projeto ZEI",
+            src: "/images/images_webp/zei.webp",
+            hrefGithub: "",
+            hrefDemo: "https://docs.google.com/presentation/d/1_rGyYw_MJ9dtWT40aiY-Kel1vTA6falh2qONNR3XwOk/edit?usp=drive_link",
+            description: projects.zei || "Apresentação completa do projeto ZEI.",
+        },
+        {
+            key: 2,
+            name: "Lions Seminovos",
+            src: "/images/images_webp/lions.webp",
+            hrefGithub: "https://github.com/IngridsSilveira/lions-seminovos",
+            hrefDemo: "https://ingridssilveira.github.io/lions-seminovos/",
+            description: projects.lions || "Descrição não disponível",
+        },
+        {
+            key: 3,
+            name: "Landing Page Clínica Estética",
+            src: "/images/images_webp/clinica-estetica.webp",
+            hrefGithub: "https://github.com/IngridsSilveira/clinica-estetica",
+            hrefDemo: "https://ingridssilveira.github.io/clinica-estetica/",
+            description: projects.lpEstetica || "Descrição não disponível",
+        },
+        {
+            key: 4,
+            name: "Landing Page Pet Shop",
+            src: "/images/images_webp/pet-shop.webp",
+            hrefGithub: "https://github.com/IngridsSilveira/pet-shop",
+            hrefDemo: "https://ingridssilveira.github.io/pet-shop/",
+            description: projects.lpPet || "Descrição não disponível",
+        },
+        {
+            key: 5,
+            name: "Redesign Coca-Cola",
+            src: "/images/images_webp/cocacola.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.cocaCola || "Proposta visual moderna para interface da marca.",
+        },
+        {
+            key: 6,
+            name: "Interface Magalu (Desktop)",
+            src: "/images/images_webp/magalu-desktop.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.magaluDesktop || "Protótipo web focado em e-commerce e UX.",
+        },
+        {
+            key: 7,
+            name: "Interface Magalu (Mobile)",
+            src: "/images/images_webp/magalu-mobile.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.magaluMobile ||
+                "Layout responsivo focado na experiência mobile.",
+        },
+        {
+            key: 8,
+            name: "Coleção de Protótipos UI",
+            src: "/images/images_webp/prototipos.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.prototipos || "Conjunto de telas e conceitos de design.",
+        },
+        {
+            key: 9,
+            name: "Interface Spotify Concept",
+            src: "/images/images_webp/spotify.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.spotify || "Estudo de UI focado em reprodutor de mídia.",
+        },
+        {
+            key: 10,
+            name: "Barbearia Moderna",
+            src: "/images/images_webp/barbearia.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.barbearia || "Descrição não disponível",
+        },
+        {
+            key: 11,
+            name: "Doces Artesanais",
+            src: "/images/images_webp/doces.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.confeitaria || "Descrição não disponível",
+        },
+        {
+            key: 12,
+            name: "Clínica de Estética",
+            src: "/images/images_webp/estetica.webp",
+            hrefGithub: "",
+            hrefDemo: "",
+            description: projects.estetica || "Descrição não disponível",
+        },
+    ];
+};
