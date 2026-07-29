@@ -24,7 +24,7 @@ export const BackgroundImage = () => {
               id="home-heading"
               className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-zinc-100 dark:text-zinc-900 font-mono transition-colors"
             >
-              Ingrid S. Silveira
+              Ingrid Souza
             </h1>
             <h2
               id="profission"
