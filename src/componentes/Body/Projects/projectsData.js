@@ -4,11 +4,11 @@ export const getProjectsData = (texts = {}, language = "pt") => {
 
     return [{
             key: 1,
-            name: "Projeto ZEI",
-            src: "/images/images_webp/zei.webp",
-            hrefGithub: "",
-            hrefDemo: "https://docs.google.com/presentation/d/1_rGyYw_MJ9dtWT40aiY-Kel1vTA6falh2qONNR3XwOk/edit?usp=drive_link",
-            description: projects.zei || "Apresentação completa do projeto ZEI.",
+            name: "Zei - Organização de Tarefas",
+            src: "/images/images_webp/zei.png",
+            hrefGithub: "https://github.com/IngridsSilveira/Zei",
+            hrefDemo: "https://ingridssilveira.github.io/Zei/",
+            description: projects.zei || "Descrição não disponível",
         },
         {
             key: 2,

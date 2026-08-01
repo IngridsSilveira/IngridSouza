@@ -25,7 +25,7 @@ const texts = {
     contact: "Contact me",
     myProjects: "My Projects",
     projects: {
-      zei: "Full presentation of the ZEI project.",
+      zei: "Full presentation of the Zei project, an app for task organization and productivity.",
       cocaCola: "Modern visual redesign proposal for the brand interface.",
       magaluDesktop: "Web prototype focused on e-commerce and UX.",
       magaluMobile: "Responsive layout focused on the mobile experience.",
@@ -76,7 +76,7 @@ const texts = {
     contact: "Entre em Contato",
     myProjects: "Meus Projetos",
     projects: {
-      zei: "Apresentação completa do projeto ZEI.",
+      zei: "Apresentação completa do projeto Zei, um app para organização de tarefas e produtividade.",
       cocaCola: "Proposta visual moderna para interface da marca.",
       magaluDesktop: "Protótipo web focado em e-commerce e UX.",
       magaluMobile: "Layout responsivo focado na experiência mobile.",
