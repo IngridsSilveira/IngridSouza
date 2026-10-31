@@ -1,7 +1,14 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useLanguage } from "../../Header/LanguageContext/LanguageProvider"; // Ajuste o caminho se necessário
-import { FaWhatsapp, FaEnvelope, FaLinkedin, FaGithub, FaPaperPlane, FaSpinner } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaPaperPlane,
+  FaSpinner,
+} from "react-icons/fa";
 
 export const Contact = () => {
   const { language, texts } = useLanguage();
@@ -10,6 +17,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -27,14 +35,15 @@ export const Contact = () => {
     setStatusMessage({ type: "", text: "" });
 
     // Pega as chaves salvas no seu arquivo .env
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
     // Dados enviados para o template do EmailJS
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
+      subject: formData.subject,
       message: formData.message,
     };
 
@@ -43,15 +52,26 @@ export const Contact = () => {
       .then(() => {
         setStatusMessage({
           type: "success",
-          text: language === "pt" ? "Mensagem enviada com sucesso!" : "Message sent successfully!",
+          text:
+            language === "pt"
+              ? "Mensagem enviada com sucesso!"
+              : "Message sent successfully!",
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
       })
       .catch((error) => {
         console.error("Erro no EmailJS:", error);
         setStatusMessage({
           type: "error",
-          text: language === "pt" ? "Ocorreu um erro ao enviar. Tente novamente." : "An error occurred. Please try again.",
+          text:
+            language === "pt"
+              ? "Ocorreu um erro ao enviar. Tente novamente."
+              : "An error occurred. Please try again.",
         });
       })
       .finally(() => {
@@ -74,7 +94,6 @@ export const Contact = () => {
 
       {/* Grid de 2 colunas */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-stretch">
-        
         {/* Lado Esquerdo: Canais de Atendimento */}
         <div className="w-full flex flex-col justify-between bg-zinc-900/90 dark:bg-zinc-100 border border-zinc-800 dark:border-zinc-300 p-6 md:p-8 rounded-2xl shadow-xl transition-colors">
           <div>
@@ -91,7 +110,9 @@ export const Contact = () => {
                 className="w-full flex items-center gap-4 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/40 p-4 rounded-xl transition-all font-medium group shadow-md"
               >
                 <FaWhatsapp className="text-2xl shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-sm md:text-base">{currentTexts.whatsappBtn || "Conversar no WhatsApp"}</span>
+                <span className="text-sm md:text-base">
+                  {currentTexts.whatsappBtn || "Conversar no WhatsApp"}
+                </span>
               </a>
 
               {/* Email Direto */}
@@ -100,7 +121,9 @@ export const Contact = () => {
                 className="w-full flex items-center gap-4 bg-zinc-800/80 hover:bg-zinc-700 dark:bg-zinc-200 dark:hover:bg-zinc-300 text-zinc-200 dark:text-zinc-800 border border-zinc-700 dark:border-zinc-300 p-4 rounded-xl transition-all font-medium group"
               >
                 <FaEnvelope className="text-2xl shrink-0 group-hover:scale-110 transition-transform text-emerald-400 dark:text-emerald-600" />
-                <span className="text-sm md:text-base">{currentTexts.emailDirectBtn || "Enviar E-mail"}</span>
+                <span className="text-sm md:text-base">
+                  {currentTexts.emailDirectBtn || "Enviar E-mail"}
+                </span>
               </a>
             </div>
           </div>
@@ -169,7 +192,42 @@ export const Contact = () => {
               className="w-full bg-zinc-950 dark:bg-zinc-200/70 border border-zinc-800 dark:border-zinc-300 rounded-xl p-3 text-zinc-100 dark:text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50"
             />
           </div>
+          <div>
+            <label className="block text-sm font-medium text-zinc-300 dark:text-zinc-700 mb-1.5 transition-colors">
+              {language === "pt" ? "Assunto do contato" : "Contact subject"}
+            </label>
 
+            <select
+              name="subject"
+              required
+              disabled={loading}
+              value={formData.subject}
+              onChange={handleChange}
+              className="w-full bg-zinc-950 dark:bg-zinc-200/70 border border-zinc-800 dark:border-zinc-300 rounded-xl p-3 text-zinc-100 dark:text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors disabled:opacity-50"
+            >
+              <option value="" disabled>
+                {language === "pt"
+                  ? "Selecione um assunto"
+                  : "Select a subject"}
+              </option>
+
+              <option value="Orçamento / Serviços">
+                {language === "pt"
+                  ? "Orçamento / Serviços"
+                  : "Quote / Services"}
+              </option>
+
+              <option value="Oportunidade profissional">
+                {language === "pt"
+                  ? "Oportunidade profissional"
+                  : "Job opportunity"}
+              </option>
+
+              <option value="Outro assunto">
+                {language === "pt" ? "Outro assunto" : "Other subject"}
+              </option>
+            </select>
+          </div>
           <div>
             <label className="block text-sm font-medium text-zinc-300 dark:text-zinc-700 mb-1.5 transition-colors">
               {currentTexts.messageLabel || "Sua Mensagem"}
@@ -222,7 +280,6 @@ export const Contact = () => {
             )}
           </button>
         </form>
-
       </div>
     </section>
   );

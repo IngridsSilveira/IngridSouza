@@ -8,8 +8,9 @@ const texts = {
     btnRepository: "Repository",
     tagDesign: "UI / UX Design",
     profission: "Digital Creator",
-    contactTitle: "Get in Touch",
-    contactSubtitle: "Have a project in mind or need help elevating your brand online? Let's talk!",
+    contactTitle: "Let's Talk",
+    contactSubtitle:
+      "Have a project in mind, need video editing or digital services, or want to discuss a professional opportunity? Feel free to reach out!",
     nameLabel: "Your Name",
     emailLabel: "Your Email",
     messageLabel: "Your Message",
@@ -47,7 +48,8 @@ const texts = {
         "Short video for a fictional artisanal candy store, focusing on visual appeal and calling for orders via WhatsApp.",
     },
     skillsTitle: "Skills & Technologies",
-    skillsSubtitle: "Technical skills in Web development, interface design, and content creation.",
+    skillsSubtitle:
+      "Technical skills in Web development, interface design, and content creation.",
     categoryEditing: "Editing",
     footerDevelopedBy: "Developed by",
     footerCTA: "Let's bring your idea to life? Get in touch.",
@@ -59,8 +61,9 @@ const texts = {
     btnRepository: "Repositório",
     tagDesign: "UI / UX Design",
     profission: "Criadora Digital",
-    contactTitle: "Entre em Contato",
-    contactSubtitle: "Tem um projeto em mente ou quer transformar a presença digital da sua empresa? Vamos conversar!",
+    contactTitle: "Vamos Conversar?",
+    contactSubtitle:
+      "Tem um projeto em mente, precisa de serviços de edição de vídeo ou soluções digitais, ou deseja conversar sobre uma oportunidade profissional? Entre em contato!",
     nameLabel: "Seu Nome",
     emailLabel: "Seu E-mail",
     messageLabel: "Sua Mensagem",
@@ -98,7 +101,8 @@ const texts = {
         "Vídeo curto para loja fictícia de doces artesanais, focando em apelo visual e chamada para encomendas via WhatsApp.",
     },
     skillsTitle: "Conhecimentos & Tecnologias",
-    skillsSubtitle: "Habilidades técnicas em desenvolvimento Web, design de interfaces e criação de conteúdo.",
+    skillsSubtitle:
+      "Habilidades técnicas em desenvolvimento Web, design de interfaces e criação de conteúdo.",
     categoryEditing: "Edição",
     footerDevelopedBy: "Desenvolvido por",
     footerCTA: "Vamos tirar sua ideia do papel? Entre em contato.",
