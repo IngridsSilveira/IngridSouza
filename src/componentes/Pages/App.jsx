@@ -3,6 +3,7 @@ import {
   Header,
   BackgroundImage,
   AboutMe,
+  Services,
   Skills,
   Projects,
   Footer,
@@ -26,8 +27,8 @@ export default function App() {
       <Header />
       <BackgroundImage />
       <AboutMe />
+       <Services />
       <Projects />
-      <Skills />
       <Footer />
       <ScrollToTop />
     </LanguageProvider>

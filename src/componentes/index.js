@@ -2,6 +2,7 @@ export * from "./Header/LanguageContext/LanguageProvider";
 export * from "./Header/Header";
 export * from "./Body/BackgroundImage/BackgroundImage";
 export * from "./Body/AboutMe/AboutMe";
+export * from "./Body/Services/Services";
 export * from "./Body/Skills/Skills";
 export * from "./Body/Projects/Projects";
 export * from "./Body/Contacts/Contact";
