@@ -23,7 +23,7 @@ export const Services = () => {
             "Product and service promotions",
             "Social media content",
             "Cuts, transitions and subtitles",
-            "Music and sound editing",
+            "Audio, music and sound effects",
             "Long-form videos upon request",
           ]
         : [
@@ -31,7 +31,7 @@ export const Services = () => {
             "Divulgação de produtos e serviços",
             "Conteúdo para redes sociais",
             "Cortes, transições e legendas",
-            "Edição de música e áudio",
+            "Edição de áudio, músicas e efeitos sonoros",
             "Vídeos longos sob consulta",
           ],
       Icon: FaVideo,
@@ -40,8 +40,8 @@ export const Services = () => {
     {
       title: isEnglish ? "Digital Design" : "Design Digital",
       description: isEnglish
-        ? "Visual materials that help communicate your brand and strengthen your digital presence."
-        : "Materiais visuais que ajudam a comunicar sua marca e fortalecer sua presença digital.",
+        ? "Visual materials and interfaces that help communicate your brand and strengthen your digital presence."
+        : "Criação de materiais visuais e interfaces que ajudam a comunicar sua marca e fortalecer sua presença digital.",
       items: isEnglish
         ? ["Social media graphics", "Visual materials", "Interface design"]
         : [
@@ -69,7 +69,7 @@ export const Services = () => {
     <section
       id="Services"
       data-aos="fade-up"
-      className="w-full py-16 px-4 flex justify-center bg-zinc-950 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 transition-colors"
+      className="w-full pt-16 pb-8 px-4 flex justify-center bg-zinc-950 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 transition-colors"
     >
       <div className="w-full max-w-6xl bg-zinc-900/90 dark:bg-zinc-100 border border-zinc-800 dark:border-zinc-300 rounded-2xl p-6 md:p-10 shadow-xl backdrop-blur-sm transition-all">
         <div className="text-center mb-10">
@@ -149,14 +149,14 @@ export const Services = () => {
         <div className="mt-10 p-6 md:p-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 text-center">
           <h3 className="text-xl md:text-2xl font-bold text-zinc-100 dark:text-zinc-900 mb-3">
             {isEnglish
-              ? "Let's bring your next video to life!"
-              : "Vamos dar vida ao seu próximo vídeo?"}
+              ? "Ready to bring your next project to life?"
+              : "Vamos tirar seu próximo projeto do papel?"}
           </h3>
 
           <p className="text-sm md:text-base text-zinc-400 dark:text-zinc-600 max-w-2xl mx-auto mb-6">
             {isEnglish
-              ? "Need videos that showcase your products, strengthen your brand and capture attention on social media? Let's talk about your project!"
-              : "Precisa de vídeos que apresentem seus produtos, valorizem sua marca e chamem a atenção nas redes sociais? Vamos conversar sobre seu projeto!"}
+              ? "Need to promote your brand, showcase your products or strengthen your digital presence? Let's talk about how I can help!"
+              : "Precisa divulgar sua marca, apresentar seus produtos ou fortalecer sua presença digital? Vamos conversar sobre como posso ajudar!"}
           </p>
 
           <a

@@ -3,28 +3,12 @@ import { createContext, useState, useContext } from "react";
 // TEXTOS DO SITE
 const texts = {
   en: {
-    btnSeeProject: "See Project",
-    btnSeePrototype: "See Prototype",
-    btnRepository: "Repository",
-    tagDesign: "UI / UX Design",
-    profission: "Digital Creator",
+    profission: "Digital Solutions Creator",
     contactTitle: "Let's Talk",
     contactSubtitle:
       "Have a project in mind, need video editing or digital services, or want to discuss a professional opportunity? Feel free to reach out!",
-    nameLabel: "Your Name",
-    emailLabel: "Your Email",
-    messageLabel: "Your Message",
-    sendMessageBtn: "Send Message",
     whatsappBtn: "Chat on WhatsApp",
     emailDirectBtn: "Send Email",
-    about: "About Me",
-    ingrid:
-      "I'm Ingrid, a web developer and digital creator with a degree in Systems Analysis and Development. I combine technical programming precision with UI/UX design and video editing expertise. My mission is to help growing businesses build a strong digital presence by crafting fast, modern, and responsive websites (using React, JavaScript, HTML, and CSS) alongside dynamic videos tailored for high conversion. Let's build something great together!",
-    btnLookProjetcs: "Look my Projects",
-    aboutMe:
-      "Elevating business online presence with high-converting websites and engaging video editing.",
-    contact: "Contact me",
-    myProjects: "My Projects",
     projects: {
       zei: "Full presentation of the Zei project, an app for task organization and productivity.",
       cocaCola: "Modern visual redesign proposal for the brand interface.",
@@ -50,34 +34,18 @@ const texts = {
     skillsTitle: "Skills & Technologies",
     skillsSubtitle:
       "Technical skills in Web development, interface design, and content creation.",
-    categoryEditing: "Editing",
+  
     footerDevelopedBy: "Developed by",
     footerCTA: "Let's bring your idea to life? Get in touch.",
     footerRights: "All rights reserved.",
   },
   pt: {
-    btnSeeProject: "Ver Projeto",
-    btnSeePrototype: "Ver Protótipo",
-    btnRepository: "Repositório",
-    tagDesign: "UI / UX Design",
-    profission: "Criadora Digital",
+    profission: "Criadora de Soluções Digitais",
     contactTitle: "Vamos Conversar?",
     contactSubtitle:
       "Tem um projeto em mente, precisa de serviços de edição de vídeo ou soluções digitais, ou deseja conversar sobre uma oportunidade profissional? Entre em contato!",
-    nameLabel: "Seu Nome",
-    emailLabel: "Seu E-mail",
-    messageLabel: "Sua Mensagem",
-    sendMessageBtn: "Enviar Mensagem",
     whatsappBtn: "Conversar no WhatsApp",
     emailDirectBtn: "Enviar E-mail",
-    about: "Sobre Mim",
-    ingrid:
-      "Sou a Ingrid, desenvolvedora web e criadora digital formada em Análise e Desenvolvimento de Sistemas. Uno a precisão técnica da programação com o apelo visual do design UI/UX e da edição de vídeo. Meu foco é ajudar pequenos e médios negócios a se destacarem no mercado digital, criando sites rápidos, modernos e responsivos (com React, JavaScript, HTML e CSS), além de vídeos dinâmicos focados em conversão e engajamento. Quer profissionalizar sua marca e atrair mais clientes? Vamos conversar!",
-    aboutMe:
-      "Transformo a presença online do seu negócio com sites de alta conversão e edições de vídeo que atraem e engajam clientes.",
-    btnLookProjetcs: "Veja meus Projetos",
-    contact: "Entre em Contato",
-    myProjects: "Meus Projetos",
     projects: {
       zei: "Apresentação completa do projeto Zei, um app para organização de tarefas e produtividade.",
       cocaCola: "Proposta visual moderna para interface da marca.",
@@ -103,7 +71,6 @@ const texts = {
     skillsTitle: "Conhecimentos & Tecnologias",
     skillsSubtitle:
       "Habilidades técnicas em desenvolvimento Web, design de interfaces e criação de conteúdo.",
-    categoryEditing: "Edição",
     footerDevelopedBy: "Desenvolvido por",
     footerCTA: "Vamos tirar sua ideia do papel? Entre em contato.",
     footerRights: "Todos os direitos reservados.",

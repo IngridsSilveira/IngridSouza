@@ -72,14 +72,14 @@ export const Projects = () => {
     <section
       id="Projects"
       data-aos="fade-right"
-      className="w-full py-16 px-4 md:px-8 bg-zinc-950 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 transition-colors"
+      className="w-full pt-16 pb-8 px-4 md:px-8 bg-zinc-950 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 transition-colors"
     >
       <div className="max-w-6xl mx-auto">
 
         {/* Título */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-100 dark:text-zinc-900 transition-colors">
-            {currentTexts.myProjects || (isEnglish ? "My Projects" : "Meus Projetos")}
+            {isEnglish ? "My Projects" : "Meus Projetos"}
           </h2>
 
           <p className="text-zinc-400 dark:text-zinc-600 mt-3 text-sm md:text-base">

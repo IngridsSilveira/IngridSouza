@@ -13,8 +13,8 @@ export const BackgroundImage = () => {
       ? "Creativity, technology and digital solutions."
       : "Criatividade, tecnologia e soluções digitais.",
     description: isEnglish
-      ? "Explore my work in video editing, digital design and web development. Turning ideas into engaging digital experiences."
-      : "Explore meus trabalhos em edição de vídeo, design digital e desenvolvimento web. Transformando ideias em experiências digitais.",
+      ? "Explore my work in video editing, digital design and web development. Creative solutions combining communication, technology and visual identity."
+      : "Conheça meus trabalhos em edição de vídeo, design digital e desenvolvimento web. Soluções criativas que unem comunicação, tecnologia e identidade visual.",
     projects: isEnglish ? "Explore projects" : "Ver projetos",
     contact: isEnglish ? "Get in touch" : "Entrar em contato",
     label: isEnglish ? "MY CREATIVE UNIVERSE" : "MEU UNIVERSO CRIATIVO",
@@ -100,7 +100,7 @@ export const BackgroundImage = () => {
         </header>
 
         {/* Apresentação principal */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-14 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-14 pb-4 md:pt-20 md:pb-8">
 
           {/* Texto */}
           <div className="text-center md:text-left">
